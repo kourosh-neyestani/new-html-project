@@ -102,7 +102,7 @@
   --base-2: "";
   --base-3: "";
   --primary: #239df0;
-  --primary-1: #ff8800;
+  --primary-1: #0e7fe1;
   --secondary: "";
   --secondary-1: "";
   --color-1: #70b6fe;
@@ -1775,6 +1775,10 @@ body {
   position: relative;
 }
 
+.app-header .header-wrap .header-links .button {
+  min-width: 90px;
+}
+
 .app-header .mega-menu {
   top: -30px;
   width: 100%;
@@ -2363,6 +2367,7 @@ Forms
   white-space: nowrap;
   display: inline-block;
   margin-right: 2px;
+  border-radius: 6px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -2445,19 +2450,34 @@ Forms
   background-color: #eee;
 }
 
-.button-primary {
+.button-default {
   color: var(--base-1);
+  background-color: var(--base-0);
+}
+
+.button-default:hover {
+  color: var(--base-1);
+  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.button-primary {
+  color: var(--base-0);
+  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
   background-color: var(--primary);
 }
 
 .button-primary:hover {
-  color: #fff;
+  color: var(--base-0);
   background-color: var(--primary-1);
 }
 
 .button-secondary {
-  color: #fff;
+  color: var(--base-0);
   background-color: var(--secondary);
+  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .button-secondary:hover {
@@ -2467,6 +2487,8 @@ Forms
 
 .button-gradient {
   color: #fff;
+  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .button-gradient:hover {
