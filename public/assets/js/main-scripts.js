@@ -4,14 +4,32 @@
 
     /*====== Test ======*/
     AFRA.Test = function () {
-        console.log("It's Works!")
+        console.log("It's Works!");
     };
 
-    $(window).on("load", function () {
-        AFRA.Preloader();
-    });
+    /*====== Test ======*/
+    AFRA.MegaMenu = function () {
+        var link = $(".app-header .has-menu");
+        var header = $(".app-header");
+        var overlay = $(".mega-menu-overlay");
+        var megamenu = $(".app-header .mega-menu");
+        link.hover(
+            function () {
+                header.addClass("header-shadow");
+                overlay.addClass("active");
+                megamenu.addClass("active");
+            },
+            function () {
+                header.removeClass("header-shadow");
+                overlay.removeClass("active");
+                megamenu.removeClass("active");
+            }
+        );
+    };
+
+    $(window).on("load", function () {});
 
     $(document).ready(function () {
-        AFRA.Test();
+        AFRA.MegaMenu(), AFRA.Test();
     });
 })(jQuery);
