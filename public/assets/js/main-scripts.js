@@ -2,9 +2,9 @@
     "use strict";
     var AFRA = {};
 
-    /*====== Preloader ======*/
+    /*====== Test ======*/
     AFRA.Test = function () {
-        alert("Tested");
+        console.log("It's Works!")
     };
 
     $(window).on("load", function () {
