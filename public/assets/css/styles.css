@@ -1795,6 +1795,7 @@ body {
   right: 0;
   width: 1110px;
   opacity: 0;
+  padding: 30px;
   position: absolute;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px 0, inset 0 127px 12px -127px rgba(0, 0, 0, 0.15);
           box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px 0, inset 0 127px 12px -127px rgba(0, 0, 0, 0.15);
@@ -1810,10 +1811,6 @@ body {
   position: relative;
 }
 
-.app-header .mega-menu .mega-menu-inner .row .item {
-  padding: 30px;
-}
-
 .app-header .mega-menu .mega-menu-inner .row .item ul {
   margin: 0;
   display: block;
@@ -1824,9 +1821,9 @@ body {
 
 .app-header .mega-menu .mega-menu-inner .row .item ul li {
   display: block;
-  opacity: .6;
+  opacity: 0.6;
   font-size: 12px;
-  letter-spacing: .3px;
+  letter-spacing: 0.3px;
   font-family: iransans;
   margin-bottom: 12px;
 }
@@ -1852,6 +1849,10 @@ body {
   font-size: 14px;
   padding-right: 39px;
   position: relative;
+}
+
+.app-header .mega-menu .mega-menu-inner .row .item:not(:last-child) {
+  margin-bottom: 15px;
 }
 
 .app-header .mega-menu .mega-menu-inner:after {

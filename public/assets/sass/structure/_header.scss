@@ -63,6 +63,7 @@ $header-height: 80px;
             right: 0;
             width: 1110px;
             opacity: 0;
+            padding: 30px;
             position: absolute;
             box-shadow: rgba(0, 0, 0, 0.1) 0 10px 10px 0, inset 0 127px 12px -127px rgba(0, 0, 0, 0.15);
             border-radius: 0 0 5px 5px;
@@ -73,7 +74,6 @@ $header-height: 80px;
                 z-index: 9;
                 position: relative;
                 .item {
-                    padding: 30px;
                     ul {
                         margin: 0;
                         display: block;
@@ -82,9 +82,9 @@ $header-height: 80px;
                         border-top: 1px solid $gray;
                         li {
                             display: block;
-                            opacity: .6;
+                            opacity: 0.6;
                             font-size: 12px;
-                            letter-spacing: .3px;
+                            letter-spacing: 0.3px;
                             font-family: iransans;
                             margin-bottom: 12px;
                         }
@@ -108,6 +108,9 @@ $header-height: 80px;
                             padding-right: 39px;
                             position: relative;
                         }
+                    }
+                    &:not(:last-child) {
+                        margin-bottom: 15px;
                     }
                 }
             }
