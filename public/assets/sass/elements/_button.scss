@@ -16,6 +16,12 @@
         display: block;
     }
 }
+.button-xs {
+    height: 24px;
+    font-size: 11px;
+    padding: 0 12px;
+    margin-bottom: 0;
+}
 .button-sm {
     height: 36px;
     font-size: 12px;
@@ -78,7 +84,7 @@
 }
 .button-default {
     color: $base-1;
-    background-color: $base-0;
+    background-color: $default;
     &:hover {
         color: $base-1;
         box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
@@ -280,6 +286,44 @@
     &:hover {
         .wave-hover {
             opacity: 1;
+        }
+    }
+}
+
+.button-gmail {
+    background-color: #d44638;
+    img {
+        width: 21px;
+    }
+    &:hover {
+        background-color: #b23121;
+    }
+}
+
+.button-arrow {
+    .icon-arrow {
+        top: 6px;
+        width: 45px;
+        height: 2px;
+        display: block;
+        position: relative;
+        background-color: $primary;
+        &:before,
+        &:after {
+            right: 0;
+            width: 10px;
+            height: 2px;
+            content: "";
+            position: absolute;
+            background-color: $primary;
+        }
+        &:before {
+            top: -4px;
+            transform: rotate(45deg);
+        }
+        &:after {
+            bottom: -4px;
+            transform: rotate(-45deg);
         }
     }
 }

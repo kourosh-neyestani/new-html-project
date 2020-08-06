@@ -100,18 +100,23 @@
 }
 
 html {
+    width: 100%;
     overflow: hidden;
     overflow-y: auto;
 }
 
 body {
+    width: 100%;
     color: $base-1;
     margin: 0;
+    overflow-x: hidden;
     background-color: $base-0;
-    -ms-overflow-style: none;
-}
-body::-webkit-scrollbar {
-    display: none;
+    &.state-menu {
+        width: 100% !important;
+        height: 100% !important;
+        overflow: hidden !important;
+        height: 100vh !important;
+    }
 }
 
 article,
@@ -148,9 +153,6 @@ textarea {
 a {
     color: inherit;
     text-decoration: none;
-}
-a:visited {
-    color: inherit;
 }
 a:focus {
     outline: inherit;
@@ -388,7 +390,7 @@ caption,
 th,
 td {
     font-weight: normal;
-    text-align: left;
+    text-align: right;
 }
 caption {
     font-size: 16px;
@@ -428,17 +430,6 @@ textarea {
         outline: none;
     }
 }
-input,
-select,
-textarea {
-    width: 100%;
-    font-size: 14px;
-}
-input,
-select {
-    height: 40px;
-    padding: 0 15px;
-}
 .button:not(:disabled):not(.disabled) {
     cursor: pointer;
 }
@@ -449,4 +440,12 @@ img {
 .skin-5 .button,
 .skin-5 .el-tabs .el-tabs-links li.active {
     color: #fff !important;
+}
+
+hr {
+    width: 100%;
+    height: 10px;
+    display: block;
+    position: relative; 
+    border-bottom: 1px solid $gray;
 }
