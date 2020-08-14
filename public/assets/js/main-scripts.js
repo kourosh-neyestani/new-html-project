@@ -35,87 +35,73 @@
 
         // Teacher
         $(".el-select2-teacher-languages").select2({
-            dir: "rtl",
             placeholder: "",
             templateResult: formatFlags,
         });
 
         $(".el-select2-tag").select2({
-            dir: "rtl",
             placeholder: "مهارت مورد نیاز",
             templateResult: formatDefault,
         });
 
         $(".el-select2-teacher-skills").select2({
-            dir: "rtl",
             placeholder: "بر اساس روز",
             templateResult: formatDefault,
         });
 
         $(".el-select2-select-hour").select2({
-            dir: "rtl",
             placeholder: "",
             minimumResultsForSearch: "Infinity",
             templateResult: formatDefault,
         });
 
         $(".el-select2-day").select2({
-            dir: "rtl",
             placeholder: "بر اساس روز",
             templateResult: formatDefault,
         });
 
         $(".el-select2-hour").select2({
-            dir: "rtl",
             placeholder: "بر اساس ساعت",
             templateResult: formatDefault,
         });
 
         $(".el-select2-gender").select2({
-            dir: "rtl",
             placeholder: "جنسیت استاد",
             templateResult: formatDefault,
         });
 
         $(".el-select2-gender-empty").select2({
-            dir: "rtl",
             placeholder: "",
             minimumResultsForSearch: "Infinity",
             templateResult: formatDefault,
         });
 
         $(".el-select2-course").select2({
-            dir: "rtl",
             placeholder: "نوع دوره",
             templateResult: formatDefault,
         });
 
         $(".el-select2-age").select2({
-            dir: "rtl",
             placeholder: "سن مخاطب",
             templateResult: formatDefault,
         });
 
         $(".el-select2-price").select2({
-            dir: "rtl",
             placeholder: "بر اساس قیمت",
             templateResult: formatDefault,
         });
 
         $(".el-select2-level").select2({
-            dir: "rtl",
             placeholder: "سطح زبان فعلی شما",
             templateResult: formatDefault,
         });
 
         $(".el-select2-flag").select2({
-            dir: "rtl",
             placeholder: "جستجوی زبان",
             templateResult: formatFlags,
         });
 
         $(".el-select2-register").select2({
-            dir: "rtl",
             placeholder: "",
             minimumResultsForSearch: "Infinity",
             templateResult: formatDefault,
