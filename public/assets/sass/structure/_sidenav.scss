@@ -126,6 +126,23 @@
                         }
                     }
                 }
+                .sidenav-menu-ul {
+                    li {
+                        color: $text-color !important;
+                        display: block;
+                        height: 39px;
+                        font-size: 12px;
+                        line-height: 39px;
+                        border-bottom: 1px solid $gray;
+                        a {
+                            font-size: 12px !important;
+                            b {
+                                color: $base-1;
+                                font-weight: bolder;
+                            }
+                        }
+                    }
+                }
             }
             .mega-menu {
                 top: -12px;

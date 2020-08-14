@@ -1,0 +1,92 @@
+${require('../components/header/_header-admin.html') class="boxed"}
+<div class="page page-dashboard page-dashboard-student">
+    <!--Section-->
+    <section class="section section-dashboard section-dashboard-student">
+        <div class="container">
+            <div class="display-spacing display-spacing-plus">
+                <div class="row">
+                    ${require('./_sidebar.html')}
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                        <div class="el-panel">
+                            <div class="el-panel-body">
+                                <div class="el-panel-title">
+                                    <h2>ویرایش پروفایل</h2>
+                                </div>
+                                <form class="form-3" action="http://httpbin.org/post" method="post" enctype="multipart/form-data">
+                                    <div class="row row-sm">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-2">
+                                            <div class="el-avatar">
+                                                <div class="avatar-upload">
+                                                    <div class="avatar-edit">
+                                                        <input type="file" id="imageUpload" accept=".png, .jpg, .jpeg" name="image" />
+                                                        <label for="imageUpload"></label>
+                                                    </div>
+                                                    <div class="avatar-preview">
+                                                        <div id="imagePreview" style="background-image: url(assets/images/people/default.jpg);">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-10">
+                                            <div class="pr-15">
+                                                <div class="form-item">
+                                                    <label for="input-name" class="form-label">نام</label>
+                                                    <input name="name" type="text" id="input-name">
+                                                </div>
+                                                <div class="form-item">
+                                                    <label for="input-lastname" class="form-label">نام خانوادگی</label>
+                                                    <input name="" type="text" id="input-lastname">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                            <div class="form-item">
+                                                <label for="input-mobile" class="form-label">شماره همراه</label>
+                                                <input name="" type="text" id="input-mobile" class="text-left">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                                            <div class="form-item">
+                                                <label for="input-email" class="form-label">پست الکترونیک</label>
+                                                <input name="" type="email" id="input-email" class="text-left">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="form-item">
+                                                <label for="input-gender" class="form-label">جنسیت</label>
+                                                <div class="input-select">
+                                                    <select id="input-gender" class="el-select2-gender-empty">
+                                                        <option value="">&nbsp;</option>
+                                                        <option value="1">خانوم</option>
+                                                        <option value="2">آقا</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="form-item">
+                                                <label for="input-username" class="form-label">نام کاربری</label>
+                                                <input name="" type="text" id="input-username" class="text-left">
+                                                <span class="form-error">این نام کاربری قبلا ثبت شده است.</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-item mb-0">
+                                                <button class="button button-md button-block button-primary" type="submit">
+                                                    <span class="text">ذخیره اطلاعات</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/-->
+</div>
+${require('../components/footer/_footer-admin.html')}

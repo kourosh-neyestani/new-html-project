@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Eduline</title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#9f00a7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+    ========================================================================
+    EXCLUSIVE ON themeforest.net
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Template Name   : Eduline - Education HTML Template
+    Author          : AfraCode
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Copyright (c) 2019 - AfraCode
+    ========================================================================
+    -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+    ${require('./_preloader.html')}
+    <!--Header-->
+    <header class="app-header app-header-1 ${props.class}">
+        <div class="container">
+            <div class="header-wrap">
+                <button class="button button-menu button-open-sidenav">
+                    <span></span>
+                </button>
+                ${require('./_menu.html')}
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo/logo.svg" alt="Logo" class="main-logo">
+                        <img src="assets/images/logo/header-logo.svg" alt="Site Logo" class="secondary-logo">
+                    </a>
+                </div>
+                <div class="header-links">
+                    <a href="page-login.html" class="button button-md button-line-primary">
+                        <span class="title">Sign In</span>
+                    </a>
+                    <a href="page-register.html" class="button button-md button-primary">
+                        <span class="title">Sign Up</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/-->
+    <!--Wrapper-->
+    <div class="app-wrapper">

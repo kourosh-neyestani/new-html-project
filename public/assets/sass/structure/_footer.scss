@@ -143,8 +143,16 @@
                 }
                 &.widget-info {
                     .footer-logo {
-                        width: 115px;
-                        margin-bottom: 30px;
+                        .primary-logo {
+                            top: 7px;
+                            width: 60px;
+                            position: relative;
+                            margin-bottom: 30px;
+                            margin-left: 12px;
+                        }
+                        .secondary-logo {
+                            width: 99px;
+                        }
                     }
                 }
                 &.widget-links {
@@ -300,7 +308,7 @@
                 &.widget-links {
                     li {
                         .text {
-                            font-size: 12px; 
+                            font-size: 12px;
                         }
                     }
                 }

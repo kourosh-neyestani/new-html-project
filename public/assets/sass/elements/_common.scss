@@ -203,6 +203,7 @@
     .btn {
         display: block;
         font-size: 12px;
+        white-space: nowrap;
         i {
             top: 1px;
             width: 12px;
@@ -216,7 +217,25 @@
         }
     }
 }
-
+@media (max-width: 768px) {
+    .el-table {
+        .custom-hide {
+            display: none;
+        }
+    }
+}
+@media (max-width: 640px) {
+    .el-table {
+        .dataTables_wrapper {
+            .dataTables_filter {
+                width: 100%;
+                input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
 /*------------------------------------
     Element: Alert
 ------------------------------------*/
@@ -327,7 +346,6 @@
         border: 1px solid #ccc;
     }
 }
-
 
 @media (max-width: 992px) {
     .el-alert {
@@ -538,7 +556,7 @@ $el-accordion-size: 84px;
                                 font-size: 14px;
                                 position: relative;
                                 margin: 0 0 6px;
-                            } 
+                            }
                             .avatar {
                                 top: 0;
                                 right: 0;
@@ -814,7 +832,7 @@ $el-accordion-size: 84px;
         .is-experienced {
             top: -1px;
             left: -1px;
-            width: 30px;
+            width: 33px;
             position: absolute;
         }
     }
@@ -849,11 +867,7 @@ $el-accordion-size: 84px;
         }
     }
     .icons {
-        top: 0;
-        width: 120px;
-        height: 90px;
         list-style: none;
-        position: absolute;
         padding: 0;
         margin: 0;
         li {
@@ -887,15 +901,29 @@ $el-accordion-size: 84px;
             }
         }
         &.icons-left {
+            top: 0;
             left: 0;
+            width: 120px;
+            height: 90px;
+            position: absolute;
             text-align: left;
             padding-top: 12px;
             padding-left: 12px;
         }
         &.icons-right {
+            top: 0;
             right: 0;
+            width: 120px;
+            height: 90px;
+            position: absolute;
             padding-top: 12px;
             padding-right: 12px;
+        }
+        &.icons-center {
+            text-align: center;
+            li {
+                display: inline-block;
+            }
         }
     }
     .text-color {
@@ -916,6 +944,15 @@ $el-accordion-size: 84px;
     @extend .el-card;
     text-align: right !important;
     margin-bottom: 30px;
+    .icons {
+        z-index: 15;
+        &.icons-left {
+            left: -15px;
+        }
+        &.icons-right {
+            right: -15px;
+        }
+    }
     .el-panel-body {
         padding: 30px;
         position: relative;
@@ -1041,6 +1078,42 @@ $el-accordion-size: 84px;
             margin: 0 auto !important;
         }
     }
+    &.el-panel-course-widget {
+        .teacher {
+            position: relative;
+            margin-bottom: 20px;
+            border-bottom: 1px solid $gray;
+            .title {
+                color: $base-1;
+                font-size: 18px !important;
+                line-height: 1.5 !important;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            .excerpt {
+                color: $text-color;
+                overflow: hidden;
+                max-height: 42px;
+                font-size: 0.9em;
+                text-align: center;
+                line-height: 1.8;
+                margin: 0 0 15px;
+            }
+            .avatar {
+                width: 102px;
+                height: 102px;
+                position: relative;
+                border-radius: 50%;
+                margin: 0 auto 20px;
+                img {
+                    border-radius: 50%;
+                }
+                .icons {
+                    position: absolute;
+                }
+            }
+        }
+    }
     &.el-panel-teacher-widget {
         .teacher {
             height: 129px;
@@ -1049,83 +1122,42 @@ $el-accordion-size: 84px;
             padding-top: 18px;
             padding-right: 120px;
             margin-bottom: 18px;
-            border-bottom: 1px solid $gray;
-            h1 {
-                font-size: 18px;
-                margin-bottom: 10px;
+            border-bottom: 1px solid var(--gray);
+            .title {
+                line-height: 1;
+                font-size: 16px;
+                margin-bottom: 15px;
             }
-            h2 {
+            .excerpt {
                 color: $text-color;
+                overflow: hidden;
+                max-height: 42px;
                 font-size: 12px;
                 text-align: right;
                 line-height: 1.8;
                 margin: 0;
             }
-            .icons {
-                top: -30px;
-                width: 120px;
-                height: 90px;
-                z-index: 3;
-                list-style: none;
-                position: absolute;
-                padding: 0;
-                margin: 0;
-                li {
-                    display: block;
-                    margin-bottom: 6px;
-                    .icon-off {
-                        width: 30px;
-                        height: 30px;
-                        color: $base-0;
-                        font-size: 12px;
-                        text-align: center;
-                        line-height: 30px;
-                        border-radius: 50%;
-                        background-color: $primary;
-                    }
-                    .icon-lang {
-                        width: 30px;
-                        height: 30px;
-                        font-size: 12px;
-                        text-align: center;
-                        overflow: hidden;
-                        border-radius: 50%;
-                    }
-                    .icon-status {
-                        color: $base-0;
-                        font-size: 12px;
-                        display: inline-block;
-                        position: relative;
-                        padding: 4px 6px;
-                        border-radius: 4px;
-                        background-color: $primary;
-                    }
-                }
-                &.icons-left {
-                    left: -15px;
-                    text-align: left;
-                    padding-top: 12px;
-                }
-                &.icons-right {
-                    right: -15px;
-                    padding-top: 12px;
-                }
-            }
             .avatar {
-                top: 0;
+                top: 9px;
                 right: 0;
                 width: 102px;
                 height: 102px;
                 position: absolute;
                 margin: 0 !important;
                 border-radius: 50%;
-                background-color: $gray;
+                background-color: var(--gray);
                 img {
                     top: 0;
                     left: 0;
                     width: 100%;
                     position: absolute;
                     border-radius: 50%;
+                }
+            }
+            .icons {
+                &.icons-left {
+                    top: -20px;
+                    left: -20px;
                 }
             }
         }
@@ -1156,6 +1188,7 @@ $el-accordion-size: 84px;
 @media (max-width: 768px) {
     .el-panel {
         .el-panel-body {
+            padding: 30px 15px;
             .el-panel-title {
                 h2 {
                     font-size: 16px;
@@ -1352,6 +1385,27 @@ $el-accordion-size: 84px;
     }
     &.center {
         text-align: center;
+    }
+}
+
+.el-line-title {
+    display: flex;
+    position: relative;
+    margin-bottom: 6px;
+    h3 {
+        color: var(--base-1);
+        font-size: 21px;
+        line-height: 1.5;
+        white-space: nowrap;
+        padding-left: 15px;
+    }
+    .line {
+        top: 12px;
+        width: 100%;
+        height: 7px;
+        content: "";
+        position: relative;
+        background-color: var(--gray);
     }
 }
 
@@ -1578,12 +1632,13 @@ $el-accordion-size: 84px;
     list-style: none;
     padding: 0;
     margin: 0 15px 20px;
-
     li {
         display: block;
         font-weight: 500;
         margin-bottom: 9px;
-
+        .text {
+            padding-right: 9px;
+        }
         .icon {
             top: 1px;
             color: $success;
@@ -1756,7 +1811,7 @@ $el-accordion-size: 84px;
 
 .el-pagination {
     float: left;
-    padding: 6px 0 0;
+    padding: 0;
     direction: ltr;
     list-style: none;
     text-align: left;
@@ -1834,6 +1889,18 @@ $el-accordion-size: 84px;
     }
 }
 
+@media (max-width: 1200px) {
+    .el-sortination {
+        ul {
+            li {
+                font-size: 12px;
+                padding-left: 9px;
+                padding-right: 9px;
+            }
+        }
+    }
+}
+
 /*------------------------------------
     Element: Banner
 ------------------------------------*/
@@ -1863,6 +1930,41 @@ $el-accordion-size: 84px;
             line-height: 1.5;
             margin: auto;
             margin-bottom: 20px;
+        }
+    }
+}
+
+/*------------------------------------
+    Element: Excerpt Posts
+------------------------------------*/
+
+.el-excerpt-posts {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid $gray;
+            .item {
+                padding: 9px;
+                p {
+                    font-size: 12px;
+                    margin-bottom: 20px;
+                }
+                h4 {
+                    font-size: 16px;
+                }
+                .button {
+                    color: $text-color;
+                    border: 1px solid $gray;
+                    background-color: $gray;
+                }
+                a:hover {
+                    color: $primary;
+                }
+            }
         }
     }
 }
@@ -2393,7 +2495,7 @@ Date Picker
         display: none;
     }
     .bd-main {
-        background-color: #FFF;
+        background-color: #fff;
         border: 1px solid #000;
         padding: 5px;
         z-index: 9999;
@@ -2426,11 +2528,12 @@ Date Picker
             cursor: pointer;
         }
     }
-    .bd-next, .bd-prev {
+    .bd-next,
+    .bd-prev {
         cursor: pointer;
         background-repeat: no-repeat;
         background-position: 50% 50%;
-        background-color: #FFF;
+        background-color: #fff;
         height: 30px;
         width: 30px;
         margin: 0;
@@ -2442,15 +2545,15 @@ Date Picker
     .bd-table {
         thead {
             background-color: #555555;
-            color: #FFF;
+            color: #fff;
             tr {
                 height: 30px;
-                cursor: context-menu;  
+                cursor: context-menu;
                 th {
                     text-align: center;
                 }
             }
-        }  
+        }
         tbody {
             tr {
                 td {
@@ -2458,7 +2561,7 @@ Date Picker
                 }
             }
         }
-    } 
+    }
     .bd-empty-cell {
         width: 30px;
         height: 30px;
@@ -2467,12 +2570,12 @@ Date Picker
         button {
             width: 30px;
             height: 30px;
-            background-color: #F8F8F8;
+            background-color: #f8f8f8;
             border: 0;
             &:hover:enabled {
                 color: red;
                 font-weight: bold;
-                background-color: #E7E7E7;
+                background-color: #e7e7e7;
                 cursor: pointer;
             }
             &:disabled {
@@ -2481,11 +2584,11 @@ Date Picker
         }
     }
     .bd-today {
-        background-color: #DFF0D8 !important;
+        background-color: #dff0d8 !important;
         color: green;
     }
     .bd-holiday {
-        background-color: #FDE8E8 !important;
+        background-color: #fde8e8 !important;
     }
     .bd-selected-day {
         color: red;
@@ -2494,7 +2597,7 @@ Date Picker
     .bd-goto-today {
         width: 210px;
         height: 30px;
-        color: #FFF;
+        color: #fff;
         background-color: #555555;
         padding-top: 5px;
         cursor: pointer;

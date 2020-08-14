@@ -1,0 +1,779 @@
+${require('./components/header/_header.html') class="boxed"}
+<div class="page page-teachers">
+    <!--Teachers-->
+    <section class="section section-teachers section-teachers-list section-teachers-list-1">
+        <figure class="section-shape shape-2">
+            <img src="assets/images/shapes/2.svg" alt="Image Description" />
+        </figure>
+        <figure class="section-shape shape-3">
+            <img src="assets/images/shapes/3.svg" alt="Image Description" />
+        </figure>
+        <div class="display-spacing display-spacing-plus">
+            <div class="section-fluid">
+                <div class="section-row row">
+                    <div id="sidenav-filter" class="section-sidebar col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                        <span class="sidenav-filter-close"></span>
+                        <div class="sticky-sidebar">
+                            <div class="sidebar-inner el-card">
+                                <form class="form-2">
+                                    <!--Form-Item-->
+                                    <div class="form-item">
+                                        <select class="el-select2-flag" name="flag">
+                                            <option value="">&nbsp;</option>
+                                            <option value="uk">انگلیسی</option>
+                                            <option value="france">فرانسوی</option>
+                                            <option value="spain">اسپانیا</option>
+                                            <option value="germany">آلمانی</option>
+                                            <option value="iran">فارسی</option>
+                                        </select>
+                                    </div>
+                                    <!--Form-Item-->
+                                    <div class="form-item">
+                                        <select class="el-select2-tag" name="tag">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">برچسب جدید برای زبان</option>
+                                            <option value="2">برچسب جدید برای زبان</option>
+                                            <option value="3">برچسب جدید برای زبان</option>
+                                            <option value="4">برچسب جدید برای زبان</option>
+                                            <option value="5">برچسب جدید برای زبان</option>
+                                            <option value="6">برچسب جدید برای زبان</option>
+                                        </select>
+                                    </div>
+                                    <!--Form-Item-->
+                                    <div class="form-item">
+                                        <select class="el-select2-level" name="level">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">تازه کار</option>
+                                            <option value="2">متوسط</option>
+                                            <option value="3">پیشرفته</option>
+                                        </select>
+                                    </div>
+                                    <!--Form-Item-->
+                                    <div class="form-item">
+                                        <select class="el-select2-gender" name="gender">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">همه</option>
+                                            <option value="2">زن</option>
+                                            <option value="3">مرد</option>
+                                        </select>
+                                    </div>
+                                    <!--Form-Item-->
+                                    <div class="form-item">
+                                        <select class="el-select2-age" name="age">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">کودکان (۴ تا ۱۱)</option>
+                                            <option value="1">نوجوانان (۱۲ تا ۱۸)</option>
+                                            <option value="1">بزرگسالان (۱۸+)</option>
+                                        </select>
+                                    </div>
+                                    <!--Form-Item-->
+                                    <div class="form-item">
+                                        <select class="el-select2-price" name="price">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">تا ۳۰ هزار تومان</option>
+                                            <option value="1">تا ۶۰ هزار تومان</option>
+                                            <option value="1">تا ۹۰ هزار تومان</option>
+                                            <option value="1">تا ۱۲۰ هزار تومان</option>
+                                            <option value="1">تا ۱۵۰ هزار تومان</option>
+                                        </select>
+                                    </div>
+                                    <!--Form-Item-->
+                                    <div class="form-item">
+                                        <select class="el-select2-day" name="day[]" multiple="multiple">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">شنبه</option>
+                                            <option value="1">یک شنبه</option>
+                                            <option value="1">دو شنبه</option>
+                                            <option value="1">سه شنبه</option>
+                                            <option value="1">چهار شنبه</option>
+                                            <option value="1">چنج شنبه</option>
+                                            <option value="1">جمعه</option>
+                                        </select>
+                                    </div>
+                                    <!--Form-Item-->
+                                    <div class="form-item">
+                                        <select class="el-select2-hour" name="hour">
+                                            <option value="">&nbsp;</option>
+                                            <option value="1">صبح - از ساعت 8 تا 12</option>
+                                            <option value="1">ظهر - از ساعت 12 تا 16</option>
+                                            <option value="1">عصر - از ساعت 16 صبح تا 20</option>
+                                            <option value="1">شب - از ساعت 20 صبح تا 24</option>
+                                        </select>
+                                    </div>
+                                    <!--Form-Button-->
+                                    <button class="button button-md button-block button-primary">جستجوی استاد</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-content col-md-8 col-lg-8 col-xl-9">
+                        <div>
+                            <div class="section-navbar">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="el-sortination">
+                                            <p>
+                                                <span class="fa fa-sort"></span>
+                                                <span class="title">مرتب سازی:</span>
+                                            </p>
+                                            <ul>
+                                                <li class="active">بیشترین مخاطب</li>
+                                                <li>گران ترین</li>
+                                                <li>ارزان ترین</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <ul class="el-pagination">
+                                            <li class="active"><span>1</span></li>
+                                            <li><span>2</span></li>
+                                            <li><span>3</span></li>
+                                            <li>...</li>
+                                            <li><span>23</span></li>
+                                            <li><span>صفحه بعد</span><span class="fa fa-caret-right"></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sidenav-sorting" class="section-navbar-sidebar">
+                                <span class="sidenav-mobile-close"></span>
+                                <div class="inner el-card">
+                                    <div class="el-sortination">
+                                        <p>
+                                            <span class="fa fa-sort"></span>
+                                            <span class="title">مرتب سازی بر اساس:</span>
+                                        </p>
+                                        <ul>
+                                            <li class="active">بیشترین مخاطب</li>
+                                            <li>گران ترین</li>
+                                            <li>ارزان ترین</li>
+                                        </ul>
+                                    </div>
+                                    <ul class="el-pagination">
+                                        <li class="active"><span>1</span></li>
+                                        <li><span>2</span></li>
+                                        <li><span>3</span></li>
+                                        <li>...</li>
+                                        <li><span>22</span></li>
+                                        <li><span>23</span></li>
+                                        <li class="next"><span>صفحه بعد</span><span class="fa fa-caret-right"></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="section-navbar-mobile">
+                                <div class="row row-sm">
+                                    <div class="col">
+                                        <button class="button button-md button-block button-primary button-open-sidenav-filter">
+                                            <span class="text">فیلتر نتایج</span>
+                                            <span class="fa fa-filter"></span>
+                                        </button>
+                                    </div>
+                                    <div class="col">
+                                        <button class="button button-md button-block button-primary button-open-sidenav-sorting">
+                                            <span class="text">مرتب سازی</span>
+                                            <span class="fa fa-sort"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <div class="row row-sm">
+                                <!--Item-->
+                                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                                    <div class="card el-card">
+                                        <a href="page-teacher.html">
+                                            <div class="inner">
+                                                <div class="avatar">
+                                                    <img src="assets/images/people/1.jpg" alt="alt" />
+                                                </div>
+                                                <div class="details">
+                                                    <h3>آناهیتا پاسبان</h3>
+                                                    <p>من رومینا گودرزی هستم و مدرس زبان چینی در شهر شیان کشور چین هستم.
+                                                    </p>
+                                                    <ul class="el-tags">
+                                                        <li>
+                                                            <span>TOEFL</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>IELTS</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>MCHE</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="other">
+                                                    <p class="price">
+                                                        <span>قیمت هر جلسه :</span>
+                                                        <span class="text-color">25,000</span>
+                                                    </p>
+                                                </div>
+                                                <ul class="icons icons-right">
+                                                    <li>
+                                                        <div class="icon-lang">
+                                                            <img src="assets/images/flags/uk.png" alt="Lang" />
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Item-->
+                                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                                    <div class="card el-card">
+                                        <a href="page-teacher.html">
+                                            <div class="inner">
+                                                <div class="avatar">
+                                                    <img src="assets/images/people/2.jpg" alt="alt" />
+                                                </div>
+                                                <div class="details">
+                                                    <h3>آرش کشاورزی</h3>
+                                                    <p>من رومینا گودرزی هستم و مدرس زبان چینی در شهر شیان کشور چین هستم.
+                                                    </p>
+                                                    <ul class="el-tags">
+                                                        <li>
+                                                            <span>TOEFL</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>IELTS</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>MCHE</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>OPIC</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="other">
+                                                    <p class="price">
+                                                        <span>قیمت هر جلسه :</span>
+                                                        <span class="text-color">30,000</span>
+                                                    </p>
+                                                </div>
+                                                <ul class="icons icons-right">
+                                                    <li>
+                                                        <div class="icon-lang">
+                                                            <img src="assets/images/flags/uk.png" alt="Lang" />
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Item-->
+                                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                                    <div class="card el-card">
+                                        <a href="page-teacher.html">
+                                            <div class="inner">
+                                                <div class="avatar">
+                                                    <img src="assets/images/people/3.jpg" alt="alt" />
+                                                </div>
+                                                <div class="details">
+                                                    <h3>کاوه آهنگری</h3>
+                                                    <p>من رومینا گودرزی هستم و مدرس زبان چینی در شهر شیان کشور چین هستم.
+                                                    </p>
+                                                    <ul class="el-tags">
+                                                        <li>
+                                                            <span>TOEFL</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>IELTS</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>MCHE</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>OPIC</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="other">
+                                                    <p class="price">
+                                                        <span>قیمت هر جلسه :</span>
+                                                        <span class="text-color">25,000</span>
+                                                    </p>
+                                                </div>
+                                                <ul class="icons icons-right">
+                                                    <li>
+                                                        <div class="icon-lang">
+                                                            <img src="assets/images/flags/uk.png" alt="Lang" />
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <ul class="icons icons-left">
+                                                    <li>
+                                                        <p class="icon-status bg-danger">
+                                                            <span>نیتیو</span>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Item-->
+                                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                                    <div class="card el-card">
+                                        <a href="page-teacher.html">
+                                            <div class="inner">
+                                                <div class="avatar">
+                                                    <img src="assets/images/people/4.jpg" alt="alt" />
+                                                </div>
+                                                <div class="details">
+                                                    <h3>پریناز براری</h3>
+                                                    <p>من رومینا گودرزی هستم و مدرس زبان چینی در شهر شیان کشور چین هستم.
+                                                    </p>
+                                                    <ul class="el-tags">
+                                                        <li>
+                                                            <span>TOEFL</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>IELTS</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>MCHE</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>OPIC</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="other">
+                                                    <p class="price">
+                                                        <span>قیمت هر جلسه :</span>
+                                                        <span class="text-color">60,000</span>
+                                                    </p>
+                                                </div>
+                                                <ul class="icons icons-right">
+                                                    <li>
+                                                        <div class="icon-lang">
+                                                            <img src="assets/images/flags/uk.png" alt="Lang" />
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <ul class="icons icons-left">
+                                                    <li>
+                                                        <p class="icon-status bg-secondary">
+                                                            <span>حرفه ای</span>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Item-->
+                                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                                    <div class="card el-card">
+                                        <a href="page-teacher.html">
+                                            <div class="inner">
+                                                <div class="avatar">
+                                                    <img src="assets/images/people/5.jpg" alt="alt" />
+                                                </div>
+                                                <div class="details">
+                                                    <h3>امید کیهانی</h3>
+                                                    <p>من رومینا گودرزی هستم و مدرس زبان چینی در شهر شیان کشور چین هستم.
+                                                    </p>
+                                                    <ul class="el-tags">
+                                                        <li>
+                                                            <span>TOEFL</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>IELTS</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>MCHE</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>OPIC</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="other">
+                                                    <p class="price">
+                                                        <span>قیمت هر جلسه :</span>
+                                                        <span class="text-color">36,000</span>
+                                                    </p>
+                                                </div>
+                                                <ul class="icons icons-right">
+                                                    <li>
+                                                        <div class="icon-lang">
+                                                            <img src="assets/images/flags/uk.png" alt="Lang" />
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <ul class="icons icons-left">
+                                                    <li>
+                                                        <p class="icon-status bg-danger">
+                                                            <span>نیتیو</span>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Item-->
+                                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                                    <div class="card el-card">
+                                        <a href="page-teacher.html">
+                                            <div class="inner">
+                                                <div class="avatar">
+                                                    <img src="assets/images/people/6.jpg" alt="alt" />
+                                                </div>
+                                                <div class="details">
+                                                    <h3>ساناز بایرامی</h3>
+                                                    <p>من رومینا گودرزی هستم و مدرس زبان چینی در شهر شیان کشور چین هستم.
+                                                    </p>
+                                                    <ul class="el-tags">
+                                                        <li>
+                                                            <span>TOEFL</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>IELTS</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>MCHE</span>
+                                                        </li>
+                                                         <li>
+                                                            <span>OPIC</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="other">
+                                                    <p class="price">
+                                                        <span>قیمت هر جلسه :</span>
+                                                        <span class="text-color old-price">25,000</span>
+                                                        <span class="text-color new-price">20,000</span>
+                                                    </p>
+                                                </div>
+                                                <ul class="icons icons-right">
+                                                    <li>
+                                                        <div class="icon-lang">
+                                                            <img src="assets/images/flags/uk.png" alt="Lang" />
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="icon-off">
+                                                            <span>%20</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Item-->
+                                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                                    <div class="card el-card">
+                                        <a href="page-teacher.html">
+                                            <div class="inner">
+                                                <div class="avatar">
+                                                    <img src="assets/images/people/7.jpg" alt="alt" />
+                                                </div>
+                                                <div class="details">
+                                                    <h3>کوروش نیستانی</h3>
+                                                    <p>من رومینا گودرزی هستم و مدرس زبان چینی در شهر شیان کشور چین هستم.
+                                                    </p>
+                                                    <ul class="el-tags">
+                                                        <li>
+                                                            <span>TOEFL</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>IELTS</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>MCHE</span>
+                                                        </li>
+                                                         <li>
+                                                            <span>OPIC</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="other">
+                                                    <p class="price">
+                                                        <span>قیمت هر جلسه :</span>
+                                                        <span class="text-color old-price">25,000</span>
+                                                        <span class="text-color new-price">20,000</span>
+                                                    </p>
+                                                </div>
+                                                <ul class="icons icons-right">
+                                                    <li>
+                                                        <div class="icon-lang">
+                                                            <img src="assets/images/flags/uk.png" alt="Lang" />
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="icon-off">
+                                                            <span>%20</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <ul class="icons icons-left">
+                                                    <li>
+                                                        <p class="icon-status bg-color-1">
+                                                            <span>دانشمند</span>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Item-->
+                                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                                    <div class="card el-card">
+                                        <a href="page-teacher.html">
+                                            <div class="inner">
+                                                <div class="avatar">
+                                                    <img src="assets/images/people/8.jpg" alt="alt" />
+                                                </div>
+                                                <div class="details">
+                                                    <h3>آتوسا بهادری</h3>
+                                                    <p>من رومینا گودرزی هستم و مدرس زبان چینی در شهر شیان کشور چین هستم.
+                                                    </p>
+                                                    <ul class="el-tags">
+                                                        <li>
+                                                            <span>TOEFL</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>IELTS</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>MCHE</span>
+                                                        </li>
+                                                         <li>
+                                                            <span>OPIC</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="other">
+                                                    <p class="price">
+                                                        <span>قیمت هر جلسه :</span>
+                                                        <span class="text-color old-price">25,000</span>
+                                                        <span class="text-color new-price">20,000</span>
+                                                    </p>
+                                                </div>
+                                                <ul class="icons icons-right">
+                                                    <li>
+                                                        <div class="icon-lang">
+                                                            <img src="assets/images/flags/uk.png" alt="Lang" />
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="icon-off">
+                                                            <span>%20</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <ul class="icons icons-left">
+                                                    <li>
+                                                        <p class="icon-status bg-secondary">
+                                                            <span>حرفه ای</span>
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Item-->
+                                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                                    <div class="card el-card">
+                                        <a href="page-teacher.html">
+                                            <div class="inner">
+                                                <div class="avatar">
+                                                    <img src="assets/images/people/9.jpg" alt="alt" />
+                                                </div>
+                                                <div class="details">
+                                                    <h3>کامران نریمانی</h3>
+                                                    <p>من رومینا گودرزی هستم و مدرس زبان چینی در شهر شیان کشور چین هستم.
+                                                    </p>
+                                                    <ul class="el-tags">
+                                                        <li>
+                                                            <span>TOEFL</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>IELTS</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>MCHE</span>
+                                                        </li>
+                                                         <li>
+                                                            <span>OPIC</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="other">
+                                                    <p class="price">
+                                                        <span>قیمت هر جلسه :</span>
+                                                        <span class="text-color">25,000</span>
+                                                    </p>
+                                                </div>
+                                                <ul class="icons icons-right">
+                                                    <li>
+                                                        <div class="icon-lang">
+                                                            <img src="assets/images/flags/uk.png" alt="Lang" />
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Item-->
+                                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                                    <div class="card el-card">
+                                        <a href="page-teacher.html">
+                                            <div class="inner">
+                                                <div class="avatar">
+                                                    <img src="assets/images/people/10.jpg" alt="alt" />
+                                                </div>
+                                                <div class="details">
+                                                    <h3>پریناز ایزدیار</h3>
+                                                    <p>من رومینا گودرزی هستم و مدرس زبان چینی در شهر شیان کشور چین هستم.
+                                                    </p>
+                                                    <ul class="el-tags">
+                                                        <li>
+                                                            <span>TOEFL</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>IELTS</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>MCHE</span>
+                                                        </li>
+                                                         <li>
+                                                            <span>OPIC</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="other">
+                                                    <p class="price">
+                                                        <span>قیمت هر جلسه :</span>
+                                                        <span class="text-color">25,000</span>
+                                                    </p>
+                                                </div>
+                                                <ul class="icons icons-right">
+                                                    <li>
+                                                        <div class="icon-lang">
+                                                            <img src="assets/images/flags/uk.png" alt="Lang" />
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Item-->
+                                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                                    <div class="card el-card">
+                                        <a href="page-teacher.html">
+                                            <div class="inner">
+                                                <div class="avatar">
+                                                    <img src="assets/images/people/11.jpg" alt="alt" />
+                                                </div>
+                                                <div class="details">
+                                                    <h3>سهند جمشیدی</h3>
+                                                    <p>من رومینا گودرزی هستم و مدرس زبان چینی در شهر شیان کشور چین هستم.
+                                                    </p>
+                                                    <ul class="el-tags">
+                                                        <li>
+                                                            <span>TOEFL</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>IELTS</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>MCHE</span>
+                                                        </li>
+                                                         <li>
+                                                            <span>OPIC</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="other">
+                                                    <p class="price">
+                                                        <span>قیمت هر جلسه :</span>
+                                                        <span class="text-color">25,000</span>
+                                                    </p>
+                                                </div>
+                                                <ul class="icons icons-right">
+                                                    <li>
+                                                        <div class="icon-lang">
+                                                            <img src="assets/images/flags/uk.png" alt="Lang" />
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Item-->
+                                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                                    <div class="card el-card">
+                                        <a href="page-teacher.html">
+                                            <div class="inner">
+                                                <div class="avatar">
+                                                    <img src="assets/images/people/12.jpg" alt="alt" />
+                                                </div>
+                                                <div class="details">
+                                                    <h3>پریسا کاویانی</h3>
+                                                    <p>من رومینا گودرزی هستم و مدرس زبان چینی در شهر شیان کشور چین هستم.
+                                                    </p>
+                                                    <ul class="el-tags">
+                                                        <li>
+                                                            <span>TOEFL</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>IELTS</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>MCHE</span>
+                                                        </li>
+                                                         <li>
+                                                            <span>OPIC</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="other">
+                                                    <p class="price">
+                                                        <span>قیمت هر جلسه :</span>
+                                                        <span class="text-color">25,000</span>
+                                                    </p>
+                                                </div>
+                                                <ul class="icons icons-right">
+                                                    <li>
+                                                        <div class="icon-lang">
+                                                            <img src="assets/images/flags/uk.png" alt="Lang" />
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-navbar pt-15">
+                            <ul class="el-pagination">
+                                <li class="active"><span>1</span></li>
+                                <li><span>2</span></li>
+                                <li><span>3</span></li>
+                                <li>...</li>
+                                <li><span>23</span></li>
+                                <li><span>صفحه بعد</span><span class="fa fa-caret-right"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/-->
+</div>
+${require('./components/footer/_footer.html')}

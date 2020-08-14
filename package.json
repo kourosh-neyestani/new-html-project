@@ -1,5 +1,5 @@
 {
-  "name": "teachestan",
+  "name": "lingo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,5 +14,8 @@
     "bootstrap": "^4.5.0",
     "html-includes": "^4.3.3",
     "node-sass": "^4.14.1"
+  },
+  "devDependencies": {
+    "htmlhint": "^0.14.1"
   }
 }
