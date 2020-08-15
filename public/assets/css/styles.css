@@ -3317,7 +3317,7 @@ Forms
 
 .form-2 .form-item .input-switch {
   top: 8px;
-  left: 0;
+  right: 0;
   position: absolute;
 }
 
@@ -3335,7 +3335,7 @@ Forms
 
 .form-2 .input-switch div {
   top: 0;
-  right: 0px;
+  left: 0px;
   width: 25px;
   height: 25px;
   position: absolute;
@@ -3351,7 +3351,7 @@ Forms
 
 .form-2 .input-switch input:checked + div {
   background-color: var(--primary);
-  right: calc(100% - 25px);
+  left: calc(100% - 25px);
 }
 
 .form-2 .input-switch.checked {
@@ -3415,14 +3415,14 @@ Forms
 }
 
 .form-3 .form-item .input-select .select2-container--default .select2-selection--single .select2-selection__arrow b {
-  left: 30px !important;
+  right: 30px !important;
 }
 
 .form-3 .form-item .input-select .select2-container--default .select2-selection--single .select2-selection__rendered,
 .form-3 .form-item .input-select .select2-container--default .select2-selection--single .select2-selection__placeholder {
   color: var(--black);
   font-size: 12px !important;
-  padding-right: 20px !important;
+  padding-left: 20px !important;
 }
 
 .form-3 .form-item .input-select-multiple {
@@ -3448,7 +3448,7 @@ Forms
   display: block;
   position: relative;
   padding-top: 2px;
-  padding-right: 33px;
+  padding-left: 33px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -3476,7 +3476,7 @@ Forms
 
 .form-3 .form-item .input-checkbox .checkbox-wrap .checkbox-mark {
   top: 0;
-  right: 4px;
+  left: 4px;
   width: 21px;
   height: 21px;
   border-radius: 2px;
@@ -3488,7 +3488,7 @@ Forms
 
 .form-3 .form-item .input-checkbox .checkbox-wrap .checkbox-mark:after {
   top: 2px;
-  left: 7px;
+  right: 7px;
   width: 7px;
   height: 12px;
   content: "";
@@ -3506,7 +3506,7 @@ Forms
 
 .form-3 .form-item .form-label {
   top: 0;
-  right: 15px;
+  left: 15px;
   z-index: 9;
   font-size: 12px;
   font-weight: bold;
@@ -3521,7 +3521,7 @@ Forms
 }
 
 .form-3 .form-item .form-error {
-  right: 20px;
+  left: 20px;
   bottom: -4px;
   color: #F56C6C;
   display: inline-block;
@@ -3540,8 +3540,8 @@ Forms
 
 .form-3 .form-input-divider .or {
   top: 6px;
-  left: 6px;
   right: 6px;
+  left: 6px;
   width: 15px;
   height: 15px;
   display: block;
@@ -3561,11 +3561,11 @@ Forms
 }
 
 .form-3 .form-input-divider:before {
-  right: -15px;
+  left: -15px;
 }
 
 .form-3 .form-input-divider:after {
-  left: -15px;
+  right: -15px;
 }
 
 .form-3 .input-fp {
@@ -3580,7 +3580,7 @@ Forms
 }
 
 .quantity input {
-  text-align: right;
+  text-align: left;
   padding: 0;
   margin: 0;
 }
@@ -3605,33 +3605,33 @@ Forms
 
 .quantity .quantity-button.quantity-up {
   top: 7px;
-  left: 39px;
+  right: 39px;
   position: absolute;
 }
 
 .quantity .quantity-button.quantity-down {
   top: 7px;
-  left: 7px;
+  right: 7px;
   position: absolute;
 }
 
 #form-details-of-classrooms {
   position: relative;
   padding-top: 30px;
-  padding-right: 30px;
-  border-right: 1px solid var(--gray);
+  padding-left: 30px;
+  border-left: 1px solid var(--gray);
 }
 
 #form-details-of-classrooms h4 {
   color: var(--primary);
   font-size: 16px;
   position: relative;
-  padding-right: 15px;
+  padding-left: 15px;
 }
 
 #form-details-of-classrooms h4:before {
   top: 11px;
-  right: -30px;
+  left: -30px;
   width: 30px;
   height: 1px;
   content: "";
@@ -3641,7 +3641,7 @@ Forms
 
 #form-details-of-classrooms h4:after {
   top: 6px;
-  right: -6px;
+  left: -6px;
   width: 12px;
   height: 12px;
   content: "";

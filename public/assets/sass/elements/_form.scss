@@ -58,7 +58,7 @@ Forms
         }
         .input-switch {
             top: 8px;
-            left: 0;
+            right: 0;
             position: absolute;
         }
     }
@@ -77,7 +77,7 @@ Forms
         transition: all 0.4s;
         div {
             top: 0;
-            right: 0px;
+            left: 0px;
             width: 25px;
             height: 25px;
             position: absolute;
@@ -89,7 +89,7 @@ Forms
             display: none;
             &:checked + div {
                 background-color: $primary;
-                right: calc(100% - 25px);
+                left: calc(100% - 25px);
             }
         }
         &.checked {
@@ -137,13 +137,13 @@ Forms
                 height: 45px;
             }
             .select2-container--default .select2-selection--single .select2-selection__arrow b {
-                left: 30px !important;
+                right: 30px !important;
             }
             .select2-container--default .select2-selection--single .select2-selection__rendered,
             .select2-container--default .select2-selection--single .select2-selection__placeholder {
                 color: $black;
                 font-size: 12px !important;
-                padding-right: 20px !important;
+                padding-left: 20px !important;
             }
         }
         .input-select-multiple {
@@ -167,7 +167,7 @@ Forms
                 display: block;
                 position: relative;
                 padding-top: 2px;
-                padding-right: 33px;
+                padding-left: 33px;
                 user-select: none;
                 &:hover input ~ .checkbox-mark {
                     background-color: #ccc;
@@ -186,7 +186,7 @@ Forms
                 }
                 .checkbox-mark {
                     top: 0;
-                    right: 4px;
+                    left: 4px;
                     width: 21px;
                     height: 21px;
                     border-radius: 2px;
@@ -196,7 +196,7 @@ Forms
                     background-color: #fff;
                     &:after {
                         top: 2px;
-                        left: 7px;
+                        right: 7px;
                         width: 7px;
                         height: 12px;
                         content: "";
@@ -214,7 +214,7 @@ Forms
         }
         .form-label {
             top: 0;
-            right: 15px;
+            left: 15px;
             z-index: 9;
             font-size: 12px;
             font-weight: bold;
@@ -227,7 +227,7 @@ Forms
             margin-bottom: 9px;
         }
         .form-error {
-            right: 20px;
+            left: 20px;
             bottom: -4px;
             color: $danger;
             display: inline-block;
@@ -244,8 +244,8 @@ Forms
         margin: 6px 0;
         .or {
             top: 6px;
-            left: 6px;
             right: 6px;
+            left: 6px;
             width: 15px;
             height: 15px;
             display: block;
@@ -264,10 +264,10 @@ Forms
             background-color: $gray;
         }
         &:before {
-            right: -15px;
+            left: -15px;
         }
         &:after {
-            left: -15px;
+            right: -15px;
         }
     }
     .input-fp {
@@ -281,7 +281,7 @@ Forms
 .quantity {
     position: relative;
     input {
-        text-align: right;
+        text-align: left;
         padding: 0;
         margin: 0;
     }
@@ -300,12 +300,12 @@ Forms
         user-select: none;
         &.quantity-up {
             top: 7px;
-            left: 39px;
+            right: 39px;
             position: absolute;
         }
         &.quantity-down {
             top: 7px;
-            left: 7px;
+            right: 7px;
             position: absolute;
         }
     }
@@ -314,16 +314,16 @@ Forms
 #form-details-of-classrooms {
     position: relative;
     padding-top: 30px;
-    padding-right: 30px;
-    border-right: 1px solid $gray;
+    padding-left: 30px;
+    border-left: 1px solid $gray;
     h4 {
         color: $primary;
         font-size: 16px;
         position: relative;
-        padding-right: 15px;
+        padding-left: 15px;
         &:before {
             top: 11px;
-            right: -30px;
+            left: -30px;
             width: 30px;
             height: 1px;
             content: "";
@@ -332,7 +332,7 @@ Forms
         }
         &:after {
             top: 6px;
-            right: -6px;
+            left: -6px;
             width: 12px;
             height: 12px;
             content: "";
