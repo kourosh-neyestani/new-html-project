@@ -4,7 +4,7 @@
 
 .section-blog {
     .el-card {
-        text-align: right;
+        text-align: left;
         padding: 30px 30px 20px;
         margin-bottom: 30px;
         background: #f8f8f8;
@@ -17,7 +17,7 @@
             background-color: $primary;
             img {
                 top: 0;
-                left: 0;
+                right: 0;
                 width: 100%;
                 position: absolute;
                 transition: all 300ms;
@@ -32,11 +32,11 @@
         .card-details {
             position: relative;
             p {
-                font-size: 12px;
+                font-size: 14px;
                 margin-bottom: 20px;
             }
             h4 {
-                font-size: 16px;
+                font-size: 18px;
                 a {
                     display: block;
                 }
@@ -49,12 +49,12 @@
                 padding: 0;
             }
             .post-meta {
-                left: 0;
+                right: 0;
                 bottom: 3px;
                 color: $text-color;
                 position: absolute;
                 .fa {
-                    padding-right: 3px;
+                    padding-left: 3px;
                 }
             }
         }
@@ -72,7 +72,7 @@
             box-shadow: $default-bs;
             img {
                 top: 0;
-                left: 0;
+                right: 0;
                 width: 100%;
                 position: absolute;
             }
@@ -81,7 +81,7 @@
             .post-head {
                 min-height: 90px;
                 position: relative;
-                padding-right: 90px;
+                padding-left: 90px;
                 margin-bottom: 45px;
                 h1 {
                     line-height: 1.5;
@@ -103,12 +103,12 @@
                 }
                 .post-author-image {
                     top: 0;
-                    right: 0;
+                    left: 0;
                     width: 75px;
                     height: 100%;
                     position: absolute;
                     img {
-                        right: 0;
+                        left: 0;
                         bottom: 0;
                         width: 75px;
                         height: 75px;
@@ -142,15 +142,15 @@
                             display: inline-block;
                             font-size: 14px;
                             position: relative;
-                            margin-right: 6px;
+                            margin-left: 6px;
                             margin-bottom: 3px;
                             a {
                                 display: block;
-                                padding-right: 12px;
+                                padding-left: 12px;
                             }
                             &:before {
                                 top: 2px;
-                                right: 1px;
+                                left: 1px;
                                 content: "#";
                                 font-size: 12px;
                                 position: absolute;
@@ -181,7 +181,7 @@
         .single-post {
             .post-details {
                 .post-head {
-                    padding-right: 69px;
+                    padding-left: 69px;
                     h1 {
                         font-size: 16px;
                     }

@@ -2457,7 +2457,6 @@ h6,
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  background-color: #fff8ee !important;
 }
 
 .app-footer a {
@@ -2486,7 +2485,7 @@ h6,
 }
 
 .app-footer.app-footer-1 .footer-widgets .widget {
-  padding-right: 36px;
+  padding-left: 36px;
 }
 
 .app-footer.app-footer-1 .footer-widgets .widget .widget-title {
@@ -2529,7 +2528,7 @@ h6,
   color: var(--primary);
   font-size: 9px;
   display: inline-block;
-  margin-left: 3px;
+  margin-right: 3px;
 }
 
 .app-footer.app-footer-1 .footer-copyright {
@@ -2540,7 +2539,6 @@ h6,
 }
 
 .app-footer.app-footer-1 .footer-copyright p {
-  font-weight: 700;
   margin: 0;
 }
 
@@ -2553,23 +2551,23 @@ h6,
 }
 
 .app-footer.app-footer-1 .footer-copyright .footer-icon.footer-icon-1 {
-  left: 0;
+  right: 0;
   position: absolute;
 }
 
 .app-footer.app-footer-1 .footer-copyright .footer-icon.footer-icon-2 {
-  left: 96px;
+  right: 96px;
   position: absolute;
 }
 
 .app-footer.app-footer-1 .footer-copyright .footer-icon.footer-icon-3 {
-  left: 195px;
+  right: 195px;
   position: absolute;
 }
 
 .app-footer.app-footer-1 .section-shape.shape-1 {
   top: -27%;
-  left: -0.75%;
+  right: -0.75%;
   width: 400px;
   opacity: 0.75;
   position: absolute;
@@ -2577,7 +2575,7 @@ h6,
 
 .app-footer.app-footer-1 .section-shape.shape-2 {
   top: -30%;
-  right: 0;
+  left: 0;
   width: 400px;
   position: absolute;
   opacity: 0.3;
@@ -2585,7 +2583,7 @@ h6,
 
 .app-footer.app-footer-1:before {
   top: 0;
-  right: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   content: "";
@@ -2622,12 +2620,16 @@ h6,
   position: relative;
 }
 
+.app-footer.app-footer-2 .footer-widgets .widget.widget-info p {
+  text-align: justify;
+}
+
 .app-footer.app-footer-2 .footer-widgets .widget.widget-info .footer-logo .primary-logo {
   top: 7px;
   width: 60px;
   position: relative;
   margin-bottom: 30px;
-  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .app-footer.app-footer-2 .footer-widgets .widget.widget-info .footer-logo .secondary-logo {
@@ -2654,7 +2656,7 @@ h6,
   color: var(--primary);
   font-size: 9px;
   display: inline-block;
-  margin-left: 3px;
+  margin-right: 3px;
 }
 
 .app-footer.app-footer-2 .footer-widgets .widget.widget-symbols {
@@ -2665,7 +2667,7 @@ h6,
 .app-footer.app-footer-2 .footer-widgets .widget.widget-symbols .footer-symbol {
   text-align: center;
   display: inline-block;
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .app-footer.app-footer-2 .footer-widgets .widget.widget-symbols .footer-symbol img {
@@ -2678,7 +2680,7 @@ h6,
 }
 
 .app-footer.app-footer-2 .footer-copyright p {
-  font-weight: 700;
+  padding-top: 15px;
   margin-bottom: 6px;
 }
 
@@ -2696,13 +2698,13 @@ h6,
 }
 
 .app-footer.app-footer-2 .footer-copyright .el-social-links {
-  text-align: left;
+  text-align: right;
   padding-top: 9px;
 }
 
 .app-footer.app-footer-2:before {
   top: 0;
-  right: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   content: "";
@@ -2711,6 +2713,10 @@ h6,
   background-image: -webkit-gradient(linear, left top, right top, from(transparent), to(rgba(45, 21, 130, 0.075)));
   background-image: linear-gradient(90deg, transparent, rgba(45, 21, 130, 0.075));
   background-repeat: repeat-x;
+}
+
+.app-footer .el-social-links {
+  text-align: right;
 }
 
 @media (max-width: 992px) {
@@ -2743,6 +2749,7 @@ h6,
     top: 30px;
     height: 75px;
     padding: 10px 0;
+    background: red;
   }
   .app-footer.app-footer-1 .footer-copyright .footer-icon {
     top: -24px;
@@ -2755,7 +2762,7 @@ h6,
   }
   .app-footer.app-footer-2 .footer-widgets .widget-symbols .display-center {
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
     padding-top: 20px;
     position: relative;
@@ -2797,16 +2804,16 @@ h6,
     width: 45px;
   }
   .app-footer.app-footer-1 .footer-copyright .footer-icon.footer-icon-1 {
-    left: 15%;
+    right: 15%;
   }
   .app-footer.app-footer-1 .footer-copyright .footer-icon.footer-icon-2 {
-    left: 0;
     right: 0;
+    left: 0;
     margin: auto;
   }
   .app-footer.app-footer-1 .footer-copyright .footer-icon.footer-icon-3 {
-    left: inherit;
-    right: 15%;
+    right: inherit;
+    left: 15%;
   }
   .app-footer.app-footer-2 .footer-widgets .row {
     margin: 0 -6px !important;
@@ -7649,7 +7656,7 @@ Custom Input Radio
     Section: Posts/Blog
 ------------------------------------*/
 .section-blog .el-card, .section-blog .el-panel, .section-blog .section-features.section-features-1 .item, .section-features.section-features-1 .section-blog .item {
-  text-align: right;
+  text-align: left;
   padding: 30px 30px 20px;
   margin-bottom: 30px;
   background: #f8f8f8;
@@ -7666,7 +7673,7 @@ Custom Input Radio
 
 .section-blog .el-card .card-image img, .section-blog .el-panel .card-image img, .section-blog .section-features.section-features-1 .item .card-image img, .section-features.section-features-1 .section-blog .item .card-image img {
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   position: absolute;
   -webkit-transition: all 300ms;
@@ -7684,12 +7691,12 @@ Custom Input Radio
 }
 
 .section-blog .el-card .card-details p, .section-blog .el-panel .card-details p, .section-blog .section-features.section-features-1 .item .card-details p, .section-features.section-features-1 .section-blog .item .card-details p {
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 20px;
 }
 
 .section-blog .el-card .card-details h4, .section-blog .el-panel .card-details h4, .section-blog .section-features.section-features-1 .item .card-details h4, .section-features.section-features-1 .section-blog .item .card-details h4 {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .section-blog .el-card .card-details h4 a, .section-blog .el-panel .card-details h4 a, .section-blog .section-features.section-features-1 .item .card-details h4 a, .section-features.section-features-1 .section-blog .item .card-details h4 a {
@@ -7706,14 +7713,14 @@ Custom Input Radio
 }
 
 .section-blog .el-card .card-details .post-meta, .section-blog .el-panel .card-details .post-meta, .section-blog .section-features.section-features-1 .item .card-details .post-meta, .section-features.section-features-1 .section-blog .item .card-details .post-meta {
-  left: 0;
+  right: 0;
   bottom: 3px;
   color: var(--text-color);
   position: absolute;
 }
 
 .section-blog .el-card .card-details .post-meta .fa, .section-blog .el-panel .card-details .post-meta .fa, .section-blog .section-features.section-features-1 .item .card-details .post-meta .fa, .section-features.section-features-1 .section-blog .item .card-details .post-meta .fa {
-  padding-right: 3px;
+  padding-left: 3px;
 }
 
 .section-single-post .single-post .post-image {
@@ -7728,7 +7735,7 @@ Custom Input Radio
 
 .section-single-post .single-post .post-image img {
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   position: absolute;
 }
@@ -7736,7 +7743,7 @@ Custom Input Radio
 .section-single-post .single-post .post-details .post-head {
   min-height: 90px;
   position: relative;
-  padding-right: 90px;
+  padding-left: 90px;
   margin-bottom: 45px;
 }
 
@@ -7765,14 +7772,14 @@ Custom Input Radio
 
 .section-single-post .single-post .post-details .post-head .post-author-image {
   top: 0;
-  right: 0;
+  left: 0;
   width: 75px;
   height: 100%;
   position: absolute;
 }
 
 .section-single-post .single-post .post-details .post-head .post-author-image img {
-  right: 0;
+  left: 0;
   bottom: 0;
   width: 75px;
   height: 75px;
@@ -7811,18 +7818,18 @@ Custom Input Radio
   display: inline-block;
   font-size: 14px;
   position: relative;
-  margin-right: 6px;
+  margin-left: 6px;
   margin-bottom: 3px;
 }
 
 .section-single-post .single-post .post-details .post-body .post-tags ul li a {
   display: block;
-  padding-right: 12px;
+  padding-left: 12px;
 }
 
 .section-single-post .single-post .post-details .post-body .post-tags ul li:before {
   top: 2px;
-  right: 1px;
+  left: 1px;
   content: "#";
   font-size: 12px;
   position: absolute;
@@ -7842,7 +7849,7 @@ Custom Input Radio
 
 @media (max-width: 768px) {
   .section-single-post .single-post .post-details .post-head {
-    padding-right: 69px;
+    padding-left: 69px;
   }
   .section-single-post .single-post .post-details .post-head h1 {
     font-size: 16px;
