@@ -357,8 +357,8 @@
             headerTag: "h3",
             autoFocus: true,
             labels: {
-                next: "بعدی",
-                finish: "پایان",
+                next: "Next",
+                finish: "Finish",
             },
             onStepChanging: function (event, currentIndex, newIndex) {
                 form.validate().settings.ignore = ":disabled,:hidden";
@@ -417,7 +417,7 @@
                 var weekday = $(this).data("calendar-weekday");
                 var start = $(this).data("calendar-start");
                 var end = $(this).data("calendar-end");
-                widget.append('<li><p><span class="time">' + weekday + " - " + start + " تا " + end + ' </span><span class="date">' + date + "</span></p></li>");
+                widget.append('<li><p><span class="date">' + date + " , 2020. </span><span> " + start + " - " + end + ' </span></p></li>');
                 form.append('<input type="hidden" name="hours[]" value="' + time + '" />');
             }
         });

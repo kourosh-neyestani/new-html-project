@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*------------------------------------
 
     Theme Name  : Teachestan
@@ -103,7 +102,9 @@
   --base-2: "";
   --base-3: "";
   --primary: #f6931c;
-  --primary-1: #e44b0fee;
+  --primary: #239df0;
+  --primary: #941cb9;
+  --primary-1: #1e87ce;
   --primary-3: #0e0b2b;
   --secondary: #68a51c;
   --secondary-1: #0d9223;
@@ -1897,6 +1898,10 @@ h6,
   .display-spacing-plus {
     padding-top: 90px;
   }
+}
+
+.container {
+  direction: ltr;
 }
 
 /*------------------------------------
@@ -4068,6 +4073,7 @@ Forms
 }
 
 .el-list-icon {
+  direction: ltr;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -4630,7 +4636,7 @@ Forms
   top: 1px;
   font-size: 14px;
   position: relative;
-  margin: 0 0 6px;
+  margin: 0 0 3px;
 }
 
 .el-comments .comments-list .comments-body .comments-ul li .comment .comment-head .avatar {
@@ -4675,6 +4681,7 @@ Forms
 .el-comments .comments-list .comments-body .comments-ul li .comment .comment-body p {
   color: var(--text-color);
   font-size: 12px;
+  text-align: justify;
   margin: 0;
 }
 
@@ -6002,7 +6009,7 @@ Forms
 
 .el-pagination li .fa {
   top: 1px;
-  padding-right: 6px;
+  padding-left: 12px;
   position: relative;
   display: inline-block;
 }
@@ -6406,7 +6413,7 @@ Forms
 }
 
 .el-calendar .el-calendar-tabs ul.day-hours li .day-cell {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: bold;
   margin: 0;
 }
@@ -6436,7 +6443,7 @@ Forms
   height: 100%;
   color: #F56C6C;
   font-size: 9px;
-  content: "غیر فعال";
+  content: "Inactive";
   position: absolute;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.45);
@@ -6453,9 +6460,9 @@ Forms
   right: -6px;
   left: -6px;
   height: 100%;
-  color: green;
+  color: #F56C6C;
   font-size: 9px;
-  content: "رزرو شده";
+  content: "Reserved";
   position: absolute;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.45);
@@ -8557,7 +8564,6 @@ testimonial
 
 .section-teacher .teacher-stats.teacher-stats-2 .item {
   padding-right: 0;
-  padding-left: 0;
 }
 
 .section-teacher .teacher-profile {
@@ -8605,7 +8611,7 @@ testimonial
     Section: Teachers-List
 ------------------------------------*/
 .section-teachers-list.section-teachers-list-1 .el-card, .section-teachers-list.section-teachers-list-1 .el-panel, .section-teachers-list.section-teachers-list-1 .section-features.section-features-1 .item, .section-features.section-features-1 .section-teachers-list.section-teachers-list-1 .item {
-  margin-bottom: 15px;
+  margin-bottom: 15px !important;
 }
 
 .section-teachers-list.section-teachers-list-2 .container {
@@ -8868,6 +8874,10 @@ testimonial
 .page .default-content img {
   display: block;
   margin: 0 auto 15px;
+}
+
+.page-blog .el-pagination {
+  margin-bottom: 15px !important;
 }
 
 .page-content {

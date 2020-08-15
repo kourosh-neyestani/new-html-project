@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../Kourosh/Projects/www.Kourosh.info/Teachestan"
 		}
 	]
 }
