@@ -369,7 +369,7 @@
                 return form.valid();
             },
             onFinished: function (event, currentIndex) {
-                alert("اطلاعات به درستی ارسال شد!");
+                alert("Finish");
             },
         });
     };

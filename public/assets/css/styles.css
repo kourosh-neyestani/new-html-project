@@ -8816,10 +8816,6 @@ testimonial
   display: none;
 }
 
-.section-stepper .el-stepper .actions ul li:nth-child(3) {
-  display: none !important;
-}
-
 .section-stepper .el-stepper .content .stepper-head {
   display: none;
 }
