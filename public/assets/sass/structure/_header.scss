@@ -58,7 +58,7 @@ $header-height: 80px;
                     display: block;
                     position: absolute;
                     margin: auto;
-                    background-color: $base-1;
+                    background-color: $primary;
                 }
             }
             .secondary-logo {
@@ -259,19 +259,6 @@ $header-height: 80px;
     &.header-shadow {
         background-color: $base-0;
         box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
-    }
-}
-
-.app-header {
-    &.sticky {
-        background: #fff8ee;
-        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
-        .main-logo {
-            top: -150px !important;
-        }
-        .secondary-logo {
-            top: 9px !important;
-        }
     }
 }
 
@@ -500,10 +487,36 @@ $header-height: 80px;
     }
 }
 
+// Header Glass Layput
+.app-header {
+    &.glass {
+        background-color: rgba(255, 255, 255, 0.75);
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+        a {
+            transition: none !important;
+        }
+    }
+}
+
+// Header Sticky Layput
+.app-header {
+    &.sticky {
+        color: $base-1;
+        background-color: $base-0;
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+        .main-logo {
+            top: -150px !important;
+        }
+        .secondary-logo {
+            top: 9px !important;
+        }
+    }
+}
+
 // Header Boxed Layput
 .app-header {
     &.boxed {
-        background: #fff8ee;
+        background: $base-0;
         box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
         .header-wrap {
             .header-logo {

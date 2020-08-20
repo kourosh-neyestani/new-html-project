@@ -1987,7 +1987,7 @@ h6,
   display: block;
   position: absolute;
   margin: auto;
-  background-color: var(--base-1);
+  background-color: var(--primary);
 }
 
 .app-header .header-wrap .header-logo .secondary-logo {
@@ -2217,20 +2217,6 @@ h6,
   background-color: var(--base-0);
   -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
           box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
-}
-
-.app-header.sticky {
-  background: #fff8ee;
-  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
-}
-
-.app-header.sticky .main-logo {
-  top: -150px !important;
-}
-
-.app-header.sticky .secondary-logo {
-  top: 9px !important;
 }
 
 .mega-menu-overlay {
@@ -2466,8 +2452,34 @@ h6,
   padding-left: 150px;
 }
 
+.app-header.glass {
+  background-color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+}
+
+.app-header.glass a {
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+.app-header.sticky {
+  color: var(--base-1);
+  background-color: var(--base-0);
+  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+}
+
+.app-header.sticky .main-logo {
+  top: -150px !important;
+}
+
+.app-header.sticky .secondary-logo {
+  top: 9px !important;
+}
+
 .app-header.boxed {
-  background: #fff8ee;
+  background: var(--base-0);
   -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
           box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
 }
