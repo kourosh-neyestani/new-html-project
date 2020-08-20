@@ -490,8 +490,10 @@
     }
     .item {
         margin-bottom: 30px;
-        .name-en {
-            display: none;
+        .name {
+            &:not(.name-en) {
+                display: none;
+            }
         }
         .image {
             img {

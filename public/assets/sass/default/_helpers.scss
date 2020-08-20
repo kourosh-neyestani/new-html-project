@@ -35,7 +35,7 @@
 * Text Colors
 */
 .text-dark {
-    color: $black;
+    color: $black !important;
 }
 .text-dark-1 {
     color: #333333;
@@ -47,7 +47,7 @@
     color: #999999;
 }
 .text-light {
-    color: $white;
+    color: $white !important;
 }
 .text-light-1 {
     color: #eeeeee;

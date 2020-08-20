@@ -39,19 +39,9 @@
             templateResult: formatFlags,
         });
 
-        $(".el-select2-tag").select2({
-            placeholder: "مهارت مورد نیاز",
-            templateResult: formatDefault,
-        });
-
         $(".el-select2-select-hour").select2({
             placeholder: "",
             minimumResultsForSearch: "Infinity",
-            templateResult: formatDefault,
-        });
-
-        $(".el-select2-hour").select2({
-            placeholder: "بر اساس ساعت",
             templateResult: formatDefault,
         });
 
@@ -59,31 +49,6 @@
             placeholder: "",
             minimumResultsForSearch: "Infinity",
             templateResult: formatDefault,
-        });
-
-        $(".el-select2-course").select2({
-            placeholder: "نوع دوره",
-            templateResult: formatDefault,
-        });
-
-        $(".el-select2-age").select2({
-            placeholder: "سن مخاطب",
-            templateResult: formatDefault,
-        });
-
-        $(".el-select2-price").select2({
-            placeholder: "بر اساس قیمت",
-            templateResult: formatDefault,
-        });
-
-        $(".el-select2-level").select2({
-            placeholder: "سطح زبان فعلی شما",
-            templateResult: formatDefault,
-        });
-
-        $(".el-select2-flag").select2({
-            placeholder: "جستجوی زبان",
-            templateResult: formatFlags,
         });
 
         $(".el-select2-register").select2({
@@ -342,8 +307,8 @@
             headerTag: "h3",
             autoFocus: true,
             labels: {
-                next: "بعدی",
-                finish: "پایان",
+                next: "Next",
+                finish: "Finish",
             },
             onStepChanging: function (event, currentIndex, newIndex) {
                 form.validate().settings.ignore = ":disabled,:hidden";
@@ -354,7 +319,7 @@
                 return form.valid();
             },
             onFinished: function (event, currentIndex) {
-                alert("اطلاعات به درستی ارسال شد!");
+                alert("Success!");
             },
         });
     };
@@ -386,14 +351,14 @@
 
         hour.on("click", function (e) {
             if ($(this).hasClass("reserved")) {
-                alert("ساعت انتخاب شده رزرو شده است.");
+                alert("Reserved!");
             } else if ($(this).hasClass("inactive")) {
-                alert("ساعت انتخاب شده غیر فعال است.");
+                alert("Deactivated!");
             } else if ($(this).hasClass("clicked")) {
                 widget.find("li:last").remove();
                 form.find("input:last").remove();
                 $(this).removeClass("clicked");
-                alert("ساعت انتخاب شده با موفقیت حذف شد.");
+                alert("Deleted!");
             } else {
                 e.preventDefault();
                 $(this).addClass("clicked");
