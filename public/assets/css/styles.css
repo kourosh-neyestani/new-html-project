@@ -7369,6 +7369,25 @@ Custom Input Radio
 }
 
 /*------------------------------------
+Element: Responsive Video
+------------------------------------*/
+.el-responsive-video {
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.el-responsive-video iframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+/*------------------------------------
     Sections Styles
 ------------------------------------*/
 /*------------------------------------
