@@ -85,6 +85,8 @@ $header-height: 80px;
                     display: inline-block;
                     margin-right: 45px;
                     & > div {
+                        height: 80px;
+                        padding-top: 30px;
                         -webkit-user-select: none; /* Safari */
                         -ms-user-select: none; /* IE 10+ and Edge */
                         user-select: none; /* Standard syntax */

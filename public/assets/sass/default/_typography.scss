@@ -12,7 +12,8 @@ body {
 p {
 	color: $text-color;
     font-weight: 500;
-	line-height: 1.8;
+    font-family: $font-family-2;
+    line-height: 1.8;
 	letter-spacing: -0.3px;
 }
 a {

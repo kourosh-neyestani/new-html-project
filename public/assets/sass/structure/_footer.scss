@@ -6,6 +6,9 @@
     overflow: hidden;
     position: relative;
     user-select: none;
+    p {
+        font-family: $font-family-1;
+    }
     a {
         color: $text-color;
         display: block;

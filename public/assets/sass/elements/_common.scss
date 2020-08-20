@@ -821,6 +821,9 @@ $el-accordion-size: 84px;
     background-color: $base-0;
     box-shadow: $default-bs !important;
     transition: all 0.45s;
+    p {
+        font-family: $font-family-1;
+    }
     .avatar {
         width: 105px;
         height: 105px;
@@ -1357,7 +1360,7 @@ $el-accordion-size: 84px;
         color: $primary;
         color: #32335a;
         font-size: 27px;
-        font-weight: 500;
+        font-weight: 600;
         letter-spacing: -1.2px;
         margin-bottom: 12px;
         .text-color {
@@ -1366,8 +1369,9 @@ $el-accordion-size: 84px;
     }
     h3 {
         color: $text-color;
-        font-size: 16px;
+        font-size: 17px;
         font-weight: 400;
+        font-family: $font-family-2;
         margin: 0;
     }
     .divider {
@@ -2416,6 +2420,9 @@ Popover
     display: block;
     position: relative;
     text-align: center;
+    p {
+        font-family: $font-family-1;
+    }
     .button {
         z-index: 12;
         position: relative;

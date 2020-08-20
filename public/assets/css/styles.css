@@ -647,6 +647,7 @@ body {
 p {
   color: var(--text-color);
   font-weight: 500;
+  font-family: "Nunito Sans", sans-serif;
   line-height: 1.8;
   letter-spacing: -0.3px;
 }
@@ -2021,6 +2022,8 @@ h6,
 }
 
 .app-header .header-wrap .header-menu ul li > div {
+  height: 80px;
+  padding-top: 30px;
   -webkit-user-select: none;
   /* Safari */
   -ms-user-select: none;
@@ -2487,6 +2490,10 @@ h6,
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.app-footer p {
+  font-family: "Poppins", sans-serif;
 }
 
 .app-footer a {
@@ -3711,6 +3718,8 @@ Forms
     Element: Button
 ------------------------------------*/
 .button {
+  font-weight: bold;
+  font-family: "Nunito Sans", sans-serif;
   position: relative;
   white-space: nowrap;
   display: inline-block;
@@ -4949,6 +4958,10 @@ Forms
   transition: all 0.45s;
 }
 
+.el-card p, .el-panel p, .section-features.section-features-1 .item p {
+  font-family: "Poppins", sans-serif;
+}
+
 .el-card .avatar, .el-panel .avatar, .section-features.section-features-1 .item .avatar {
   width: 105px;
   height: 105px;
@@ -5533,7 +5546,7 @@ Forms
   color: var(--primary);
   color: #32335a;
   font-size: 27px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: -1.2px;
   margin-bottom: 12px;
 }
@@ -5544,8 +5557,9 @@ Forms
 
 .el-heading h3 {
   color: var(--text-color);
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
+  font-family: "Nunito Sans", sans-serif;
   margin: 0;
 }
 
@@ -6679,6 +6693,10 @@ Popover
   text-align: center;
 }
 
+.el-popover p {
+  font-family: "Poppins", sans-serif;
+}
+
 .el-popover .button {
   z-index: 12;
   position: relative;
@@ -7376,7 +7394,7 @@ Custom Input Radio
 
 .section-hero.section-hero-1 .hero-content p {
   color: var(--text-color);
-  font-size: 16px;
+  font-size: 17px;
   margin-bottom: 30px;
 }
 
