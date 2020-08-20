@@ -8800,10 +8800,6 @@ testimonial
   position: absolute;
 }
 
-.section-auth .el-heading h2 {
-  color: var(--primary) !important;
-}
-
 @media (max-width: 992px) {
   .page-auth .el-heading {
     margin-bottom: 45px;
