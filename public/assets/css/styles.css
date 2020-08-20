@@ -1988,7 +1988,7 @@ h6,
   display: block;
   position: absolute;
   margin: auto;
-  background-color: var(--primary);
+  background-color: var(--secondary);
 }
 
 .app-header .header-wrap .header-logo .secondary-logo {
@@ -2157,7 +2157,7 @@ h6,
 
 .app-header .mega-menu .mega-menu-inner:before {
   top: -7px;
-  left: 15px;
+  left: 33px;
   width: 30px;
   height: 30px;
   z-index: 3;
@@ -2180,7 +2180,7 @@ h6,
 }
 
 .app-header .mega-menu.mega-menu-2 .mega-menu-inner:before {
-  left: 129px;
+  left: 156px;
 }
 
 .app-header .button-menu {
