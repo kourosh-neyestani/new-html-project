@@ -29,7 +29,7 @@
                 return state.text;
             }
             var baseUrl = "assets/images/flags";
-            var $state = $('<div class="flag"><img src="' + baseUrl + "/" + state.element.value.toLowerCase() + '.png" class="img-flag" /> ' + state.text + "</div>");
+            var $state = $('<div class="flag"><img src="' + baseUrl + "/" + state.element.value.toLowerCase() + '.svg" class="img-flag" /> ' + state.text + "</div>");
             return $state;
         }
 
@@ -44,29 +44,14 @@
             templateResult: formatDefault,
         });
 
-        $(".el-select2-teacher-skills").select2({
-            placeholder: "بر اساس روز",
-            templateResult: formatDefault,
-        });
-
         $(".el-select2-select-hour").select2({
             placeholder: "",
             minimumResultsForSearch: "Infinity",
             templateResult: formatDefault,
         });
 
-        $(".el-select2-day").select2({
-            placeholder: "بر اساس روز",
-            templateResult: formatDefault,
-        });
-
         $(".el-select2-hour").select2({
             placeholder: "بر اساس ساعت",
-            templateResult: formatDefault,
-        });
-
-        $(".el-select2-gender").select2({
-            placeholder: "جنسیت استاد",
             templateResult: formatDefault,
         });
 
@@ -357,8 +342,8 @@
             headerTag: "h3",
             autoFocus: true,
             labels: {
-                next: "Next",
-                finish: "Finish",
+                next: "بعدی",
+                finish: "پایان",
             },
             onStepChanging: function (event, currentIndex, newIndex) {
                 form.validate().settings.ignore = ":disabled,:hidden";
@@ -369,7 +354,7 @@
                 return form.valid();
             },
             onFinished: function (event, currentIndex) {
-                alert("Finish");
+                alert("اطلاعات به درستی ارسال شد!");
             },
         });
     };
@@ -401,14 +386,14 @@
 
         hour.on("click", function (e) {
             if ($(this).hasClass("reserved")) {
-                alert("ساعت انتخاب شده رزرو شده است.")
+                alert("ساعت انتخاب شده رزرو شده است.");
             } else if ($(this).hasClass("inactive")) {
-                alert("ساعت انتخاب شده غیر فعال است.")
+                alert("ساعت انتخاب شده غیر فعال است.");
             } else if ($(this).hasClass("clicked")) {
                 widget.find("li:last").remove();
                 form.find("input:last").remove();
                 $(this).removeClass("clicked");
-                alert("ساعت انتخاب شده با موفقیت حذف شد.")
+                alert("ساعت انتخاب شده با موفقیت حذف شد.");
             } else {
                 e.preventDefault();
                 $(this).addClass("clicked");
@@ -417,7 +402,7 @@
                 var weekday = $(this).data("calendar-weekday");
                 var start = $(this).data("calendar-start");
                 var end = $(this).data("calendar-end");
-                widget.append('<li><p><span class="date">' + date + " , 2020. </span><span> " + start + " - " + end + ' </span></p></li>');
+                widget.append('<li><p><span class="time">' + weekday + " - " + start + " تا " + end + ' </span><span class="date">' + date + "</span></p></li>");
                 form.append('<input type="hidden" name="hours[]" value="' + time + '" />');
             }
         });
@@ -469,17 +454,7 @@
             if (value < 15) {
                 e.preventDefault();
                 value = value + 1;
-                $(".input-datepicker:last").persianDatepicker({
-                    startDate: "today",
-                    endDate: "1400/1/1",
-                });
-                select
-                    .append("<li> <h4>جلسه <span>" + value + '</span></h4> <div class="row row-sm"> <div class="col-12 col-sm-12 col-md-6"> <div class="form-item"> <label class="form-label">تاریخ شروع</label> <input type="text" name="date[]" class="input-datepicker" required /> </div> </div> <div class="col-12 col-sm-12 col-md-6"> <div class="form-item"> <label for="input-type" class="form-label">ساعت شروع</label> <div class="input-select"> <select class="el-select2-select-hour" name="hour[]" required> <option value="">&nbsp;</option> <option value="7">07:00</option> <option value="8">08:00</option> <option value="9">09:00</option> <option value="10">10:00</option> <option value="11">11:00</option> <option value="12">12:00</option> <option value="13">13:00</option> <option value="14">14:00</option> <option value="15">15:00</option> <option value="16">16:00</option> <option value="17">17:00</option> <option value="18">18:00</option> <option value="19">19:00</option> <option value="20">20:00</option> <option value="21">21:00</option> <option value="22">22:00</option> </select> </div> </div> </div> </div> </li>')
-                    .find(".input-datepicker:last")
-                    .persianDatepicker({
-                        startDate: "today",
-                        endDate: "1400/1/1",
-                    });
+                select.append("<li> <h4>Lesson <span>" + value + '</span></h4> <div class="row row-sm"> <div class="col-12 col-sm-12 col-md-6"> <div class="form-item"> <label class="form-label">Start</label> <input type="text" name="date[]" class="input-datepicker" required /> </div> </div> <div class="col-12 col-sm-12 col-md-6"> <div class="form-item"> <label for="input-type" class="form-label">End</label><input type="text" name="hours[]" class="input-datepicker" required /></div> </div> </div> </li>');
             }
         });
         btnDelete.on("click", function (e) {
@@ -491,18 +466,11 @@
         });
     };
 
-    /*====== DatePicker ======*/
-    AFRA.DatePicker = function () {
-        $(".input-datepicker").persianDatepicker({
-            startDate: "today",
-            endDate: "1400/1/1",
-        });
-    };
 
     $(window).on("load", function () {});
 
     $(document).ready(function () {
-        AFRA.MultipleClassRooms(), AFRA.MegaMenu(), AFRA.Stepper(), AFRA.Counter(), AFRA.StickyHeader(), AFRA.StickySidebar(), AFRA.Sidenav(), AFRA.SidenavFilter(), AFRA.SidenavSorting(), AFRA.Select2(), AFRA.Accordion(), AFRA.FormSwitch(), AFRA.Calendar(), AFRA.CalendarTabs(), AFRA.CalendarSelect(), AFRA.Popover(), AFRA.UploadAvatar(), AFRA.DatePicker();
+        AFRA.MultipleClassRooms(), AFRA.MegaMenu(), AFRA.Stepper(), AFRA.Counter(), AFRA.StickyHeader(), AFRA.StickySidebar(), AFRA.Sidenav(), AFRA.SidenavFilter(), AFRA.SidenavSorting(), AFRA.Select2(), AFRA.Accordion(), AFRA.FormSwitch(), AFRA.Calendar(), AFRA.CalendarTabs(), AFRA.CalendarSelect(), AFRA.Popover(), AFRA.UploadAvatar();
     });
 })(jQuery);
 

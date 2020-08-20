@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en" dir="ltr">
 
 <head>
-    <title>Teachestan</title>
+    <title>Eduline</title>
     <meta charset="UTF-8" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
@@ -12,22 +12,18 @@
     <base href="../">
     <!--
     ========================================================================
-    Teachestan
+    EXCLUSIVE ON themeforest.net
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Template Name   : Teachestan
-    Author          : @Kourosh-Neyestani
+    Template Name   : Eduline - Education HTML Template
+    Author          : AfraCode
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Copyright (c) 2020 - @Kourosh-Neyestani
+    Copyright (c) 2019 - AfraCode
     ========================================================================
     -->
     <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,300,500,600,700,900&display=swap">
     <link rel="stylesheet" href="assets/css/plugins.min.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/dashboard.css" />
 </head>
 
 <body>
@@ -41,20 +37,22 @@
                 </button>
                 ${require('./_menu.html')}
                 <div class="header-logo">
-                    <a href="index.html">
-                        <img src="assets/images/logo/logo.svg" alt="Logo" class="main-logo">
-                        <img src="assets/images/logo/header-logo.svg" alt="Site Logo" class="secondary-logo">
+                    <a href="index.html" class="primary-logo">
+                        <span class="text-1">Edu</span>
+                        <span class="text-2"></span>
                     </a>
                 </div>
                 <div class="header-links">
-                    <a href="student/dashboard.html" class="button button-md button-secondary">
-                        <span class="title">حساب کاربری</span>
+                    <a href="page-login.html" class="button button-md button-line-primary">
+                        <span class="title">Sign In</span>
+                    </a>
+                    <a href="page-register.html" class="button button-md button-primary">
+                        <span class="title">Sign Up</span>
                     </a>
                 </div>
             </div>
         </div>
     </header>
     <!--/-->
-    ${require('../sidenav/_sidenav.html')}
     <!--Wrapper-->
-    <div class="app-wrapper app-wrapper-dashboard">
+    <div class="app-wrapper">

@@ -137,7 +137,9 @@ Forms
                 height: 45px;
             }
             .select2-container--default .select2-selection--single .select2-selection__arrow b {
-                right: 30px !important;
+                top: 21px;
+                right: 20px !important;
+                left: inherit !important;
             }
             .select2-container--default .select2-selection--single .select2-selection__rendered,
             .select2-container--default .select2-selection--single .select2-selection__placeholder {

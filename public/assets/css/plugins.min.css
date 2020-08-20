@@ -7709,7 +7709,7 @@ button.swiper-pagination-bullet {
 }
 .select2-container .text {
     top: 6px;
-    right: 8px;
+    left: 8px;
     font-size: 12px;
     position: relative;
 }
@@ -7718,6 +7718,7 @@ button.swiper-pagination-bullet {
 }
 .select2-container .flag {
     top: 6px;
+    left: 0;
     font-size: 12px;
     position: relative;
 }
@@ -7754,9 +7755,6 @@ button.swiper-pagination-bullet {
 .select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice__display {
     font-size: 10px;
 }
-.select2-container--default .select2-selection--single .select2-selection__arrow b {
-    margin-left: -10px;
-}
 
 
 @keyframes start {
@@ -7776,10 +7774,9 @@ button.swiper-pagination-bullet {
         -webkit-transform: scale(1);
     }
 }
-.rtl{direction:rtl}
 .pdp-default {
     position: absolute;    
-    direction: rtl;    
+    direction: ltr;    
     color: #555;
     box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.19);
 	z-index: 99999;
