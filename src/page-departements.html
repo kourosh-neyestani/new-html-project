@@ -1,38 +1,38 @@
 ${require('./components/header/_header.html') class="glass"}
 <div class="page page-departements">
-    <!--Hero-->
-    <section class="section section-hero section-hero-1">
+
+     <!--Hero-->
+     <section class="section section-hero section-hero-2">
         <figure class="section-shape shape-1">
             <img class="img-fluid" src="assets/images/shapes/1.svg" alt="Image Description" />
         </figure>
         <figure class="section-shape shape-2">
             <img class="img-fluid" src="assets/images/shapes/2.svg" alt="Image Description" />
         </figure>
-        <div class="hero-image hero-image-1">
-            <img src="assets/images/hero/2.svg" alt="alt" />
+        <div class="hero-image hero-image-2">
+            <img src="assets/images/hero/2.png" alt="alt" />
         </div>
-        <div class="display-center">
+        <div class="display-spacing">
             <div class="container">
                 <div class="hero-content">
-                    <h1>
-                        Education is the
-                        <br />
-                        Power of
-                        <div class="text-border"><span>Humanity</span></div>
-                    </h1>
-                    <p>Study any topic, anytime.<br /> Explore thousands of courses for the lowest price ever!</p>
-                    <button class="button button-md button-primary">
+                    <h1>Study any Topic, Earn Money!</h1>
+                    <h2>Anytime <span>.</span> Anywhere <span>.</span> Anytime.</h2>
+                    <a href="page-teachers.html" class="button button-md button-primary">
                         <span class="wave-hover"></span>
-                        <span class="text">View Courses</span>
-                    </button>
-                    <button class="button button-md button-secondary">
-                        <span class="text">Learn More</span>
-                    </button>
+                        <span class="text">Teachers</span>
+                    </a>
+                    <a href="page-start.html" class="button button-md button-secondary">
+                        <span class="text">Get started</span>
+                    </a>
+                    <a href="page-courses.html" class="button button-md button-primary">
+                        <span class="text">Courses</span>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
     <!--/-->
+    ${require('./sections/_services.html')}
     ${require('./sections/_teachers.html')}
     ${require('./sections/_cta-1.html')}
     ${require('./sections/_courses.html')}
