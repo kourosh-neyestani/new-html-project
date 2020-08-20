@@ -144,6 +144,11 @@
                         text-align: justify;
                     }
                     .footer-logo {
+                        color: $base-1;
+                        margin-bottom: 15px;
+                        span {
+                            font-size: 24px;
+                        }
                         .primary-logo {
                             top: 7px;
                             width: 60px;

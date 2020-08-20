@@ -2654,6 +2654,15 @@ h6,
   text-align: justify;
 }
 
+.app-footer.app-footer-2 .footer-widgets .widget.widget-info .footer-logo {
+  color: var(--base-1);
+  margin-bottom: 15px;
+}
+
+.app-footer.app-footer-2 .footer-widgets .widget.widget-info .footer-logo span {
+  font-size: 24px;
+}
+
 .app-footer.app-footer-2 .footer-widgets .widget.widget-info .footer-logo .primary-logo {
   top: 7px;
   width: 60px;
