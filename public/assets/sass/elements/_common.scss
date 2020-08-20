@@ -1870,7 +1870,6 @@ $el-accordion-size: 84px;
             }
             &.active {
                 color: $base-0;
-                font-weight: bold;
                 background-color: $primary;
             }
         }
@@ -1881,10 +1880,14 @@ $el-accordion-size: 84px;
         display: inline-block;
         margin-right: 12px;
         .fa {
-            top: 1px;
+            top: -1px;
             font-size: 11px;
             position: relative;
             margin-right: 3px;
+        }
+        .title {
+            font-size: 14px;
+            font-weight: 600;
         }
     }
 }
