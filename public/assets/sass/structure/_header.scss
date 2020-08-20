@@ -40,6 +40,27 @@ $header-height: 80px;
                 margin: 0 auto;
                 transition: all 900ms;
             }
+            .primary-logo {
+                display: block;
+                position: relative;
+                .text-1 {
+                    top: 3px;
+                    z-index: 1;
+                    font-size: 24px;
+                    position: relative;
+                }
+                .text-2 {
+                    left: 0;
+                    right: 0;
+                    bottom: -3px;
+                    width: 42px;
+                    height: 3px;
+                    display: block;
+                    position: absolute;
+                    margin: auto;
+                    background-color: $base-1;
+                }
+            }
             .secondary-logo {
                 top: 72px;
                 right: 0;

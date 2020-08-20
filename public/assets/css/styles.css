@@ -101,12 +101,13 @@
   --base-1: #151812;
   --base-2: "";
   --base-3: "";
-  --primary: #f6931c;
-  --primary: #239df0;
   --primary: #941cb9;
+  --primary: #239df0;
+  --primary: #f6931c;
   --primary-1: #1e87ce;
   --primary-3: #0e0b2b;
-  --secondary: #68a51c;
+  --secondary: #f64f1c;
+  --secondary-1: #0d9223;
   --secondary-1: #0d9223;
   --text-color: #717f94;
   --color-1: #70b6fe;
@@ -1962,6 +1963,30 @@ h6,
   margin: 0 auto;
   -webkit-transition: all 900ms;
   transition: all 900ms;
+}
+
+.app-header .header-wrap .header-logo .primary-logo {
+  display: block;
+  position: relative;
+}
+
+.app-header .header-wrap .header-logo .primary-logo .text-1 {
+  top: 3px;
+  z-index: 1;
+  font-size: 24px;
+  position: relative;
+}
+
+.app-header .header-wrap .header-logo .primary-logo .text-2 {
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  width: 42px;
+  height: 3px;
+  display: block;
+  position: absolute;
+  margin: auto;
+  background-color: var(--base-1);
 }
 
 .app-header .header-wrap .header-logo .secondary-logo {
