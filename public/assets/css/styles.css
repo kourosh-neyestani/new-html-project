@@ -1988,7 +1988,7 @@ h6,
   display: block;
   position: absolute;
   margin: auto;
-  background-color: var(--secondary);
+  background-color: var(--primary);
 }
 
 .app-header .header-wrap .header-logo .secondary-logo {
@@ -7442,6 +7442,11 @@ Element: Responsive Video
   height: 100vh;
 }
 
+.section-hero.section-hero-1 .hero-image {
+  z-index: 3;
+  position: relative;
+}
+
 .section-hero.section-hero-1 .hero-image.hero-image-1 {
   top: 27%;
   right: 11%;
@@ -7633,6 +7638,12 @@ Element: Responsive Video
 }
 
 @media (max-width: 992px) {
+  .section-hero.section-hero-1 {
+    height: 100vh;
+  }
+  .section-hero.section-hero-1 .hero-image.hero-image-1 {
+    opacity: .1;
+  }
   .section-hero.section-hero-2 .display-spacing .hero-content {
     padding-top: 60px;
   }
