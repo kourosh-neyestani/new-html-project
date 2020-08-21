@@ -4380,6 +4380,7 @@ Forms
   border-radius: 12px;
   margin-bottom: 30px;
   border-radius: 6px;
+  border: 1px solid transparent;
 }
 
 .el-alert .alert-flex .alert-icon {
@@ -4421,6 +4422,28 @@ Forms
   width: 100%;
   min-height: 80px;
   padding-top: 27px;
+}
+
+.el-alert.alert-info {
+  border-color: #d6d8db;
+  background-color: #e2e3e5;
+}
+
+.el-alert.alert-info .alert-icon .icon {
+  color: #383d41;
+}
+
+.el-alert.alert-info .alert-content p {
+  color: #383d41;
+}
+
+.el-alert.alert-info .alert-links {
+  width: 180px;
+}
+
+.el-alert.alert-info .alert-links .button {
+  color: #383d41;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .el-alert.alert-danger {
@@ -8729,6 +8752,7 @@ testimonial
 
 .section-testimonial .item .content p {
   font-size: 14px;
+  font-weight: bold;
   text-align: left;
   margin: 0;
 }
