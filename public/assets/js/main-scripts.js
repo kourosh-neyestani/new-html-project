@@ -150,6 +150,8 @@
         toggle.on("click", function (e) {
             e.preventDefault();
 
+            alert("s")
+
             var parent = $(this).parent("li");
 
             if (parent.hasClass("show")) {
