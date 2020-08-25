@@ -9162,6 +9162,20 @@ testimonial
 }
 
 /*------------------------------------
+    Demo
+------------------------------------*/
+.section-demo-hero .hero-image img {
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+@media (min-width: 1200px) {
+  .section-demo-hero .hero-image img {
+    width: 600px !important;
+  }
+}
+
+/*------------------------------------
     Section: Contact
 ------------------------------------*/
 .section-contact-1 .contact-image {

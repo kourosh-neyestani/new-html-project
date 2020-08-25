@@ -1023,3 +1023,25 @@
         }
     }
 }
+
+/*------------------------------------
+    Demo
+------------------------------------*/
+
+.section-demo-hero {
+    .hero-image {
+        img {
+            transform: rotate(-15deg);
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-demo-hero {
+        .hero-image {
+            img {
+                width: 600px !important;
+            }
+        }
+    }
+}
