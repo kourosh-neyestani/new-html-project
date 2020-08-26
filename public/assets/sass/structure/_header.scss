@@ -1,7 +1,6 @@
 /*------------------------------------
     Header
 ------------------------------------*/
-
 $header-height: 80px;
 
 // Header 1
@@ -58,7 +57,7 @@ $header-height: 80px;
                     display: block;
                     position: absolute;
                     margin: auto;
-                    background-color: $primary;
+                    background-color: $base-0;
                 }
             }
             .secondary-logo {
@@ -255,10 +254,6 @@ $header-height: 80px;
                 content: "";
             }
         }
-    }
-    &.header-shadow {
-        background-color: $base-0;
-        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
     }
 }
 
@@ -498,6 +493,16 @@ $header-height: 80px;
     }
 }
 
+// Header Empty Layput
+.app-header {
+    &.empty {
+        color: $base-0;
+        a {
+            transition: none !important;
+        }
+    }
+}
+
 // Header Sticky Layput
 .app-header {
     &.sticky {
@@ -528,5 +533,13 @@ $header-height: 80px;
                 }
             }
         }
+    }
+}
+
+.app-header {
+    &.header-shadow {
+        color: $base-1;
+        background-color: $base-0;
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
     }
 }

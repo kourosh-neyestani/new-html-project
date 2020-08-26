@@ -28,10 +28,10 @@ heading
 }
 .theme-preview .theme-preview-heading h2 {
     font-size: 30px;
-    font-weight: 300;
     margin-bottom: 15px;
 }
 .theme-preview .theme-preview-heading h3 {
+    font-weight: 300;
     margin-bottom: 0;
 }
 /*------------------------------------

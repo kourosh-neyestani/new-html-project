@@ -1,43 +1,39 @@
-${require('./components/header/_header.html')}
+${require('./components/header/_header.html') class="empty"}
 <div class="page-home">
     <!--Hero-->
-    <section class="section section-hero section-hero-1">
+    <section class="section section-hero section-hero-5 bg-gradient-180">
         <figure class="section-shape shape-1">
-            <img class="img-fluid" src="assets/images/shapes/1.svg" alt="Image Description" />
+            <img src="assets/images/shapes/1.svg" alt="Image Description" />
         </figure>
-        <figure class="section-shape shape-2">
-            <img class="img-fluid" src="assets/images/shapes/2.svg" alt="Image Description" />
-        </figure>
-        <div class="hero-image hero-image-1">
-            <img src="assets/images/hero/2.svg" alt="alt" />
-        </div>
         <div class="display-center">
             <div class="container">
                 <div class="hero-content">
-                    <h1>
-                        Education is the
-                        <br />
-                        Power of
-                        <div class="text-border"><span>Humanity</span></div>
-                    </h1>
-                    <p>Study any topic, anytime.<br /> Explore thousands of courses for the lowest price ever!</p>
-                    <a href="page-teachers.html" class="button button-md button-primary">
-                        <span class="wave-hover"></span>
-                        <span class="text">List of Teachers!</span>
-                    </a>
-                    <a href="page-start.html" class="button button-md button-secondary">
-                        <span class="text">Let's get started</span>
-                    </a>
+                    <h1>Learn a new language<br /> with an online tutor</h1>
+                    <p class="text-light">Hold an online language class with your favorite teacher!<br />Find your teacher, choose the time and start learning the language.</p>
                 </div>
             </div>
+        </div>
+        <div class="el-floating-shapes">
+            <span class="shape shape-1">
+                <img src="assets/images/shapes/1.png" alt="--Alternative--">
+            </span>
+            <span class="shape shape-2">
+                <img src="assets/images/shapes/2.png" alt="--Alternative--">
+            </span>
+            <span class="shape shape-3">
+                <img src="assets/images/shapes/3.png" alt="--Alternative--">
+            </span>
+            <span class="shape shape-4">
+                <img src="assets/images/shapes/4.png" alt="--Alternative--">
+            </span>
         </div>
     </section>
     <!--/-->
     ${require('./sections/_flags.html')}
     ${require('./sections/_teachers.html')}
-    ${require('./sections/_cta-1.html')}
-    ${require('./sections/_courses.html')}
+    ${require('./sections/_cta-2.html')}
+    ${require('./sections/_services.html')}
     ${require('./sections/_testimonials.html')}
-    ${require('./sections/_blog.html')}
+    ${require('./sections/_courses.html')}    
 </div>
 ${require('./components/footer/_footer.html')}

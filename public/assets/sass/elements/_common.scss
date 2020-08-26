@@ -422,7 +422,6 @@
 /*------------------------------------
     Element: Accordion
 ------------------------------------*/
-
 $el-accordion-size: 84px;
 
 .el-accordion {
@@ -458,9 +457,10 @@ $el-accordion-size: 84px;
             padding: 0 15px;
             margin: 0 auto;
             text-align: left;
+            h3,
             h4 {
                 color: $text-color;
-                font-size: 15px;
+                font-size: 14px;
                 margin: 0;
                 transition: all 300ms;
             }
@@ -491,6 +491,7 @@ $el-accordion-size: 84px;
         border-top: 1px solid $gray;
         background-color: #f7f7f7;
         p {
+            font-size: 12px;
             margin: 0;
         }
         &.active {
@@ -663,19 +664,11 @@ $el-accordion-size: 84px;
     overflow: hidden;
     position: relative;
     p {
-        font-size: 17px;
+        color: $base-0;
+        font-size: 18px;
+        font-weight: 300;
         text-align: center;
-        margin-bottom: 0;
-    }
-    h3 {
-        color: #32335a;
-        font-size: 24px;
-        font-weight: 700;
-        letter-spacing: -1.5px;
-        margin-bottom: 12px;
-        .text-color {
-            color: $primary;
-        }
+        margin-bottom: 20px;
     }
     .display-center {
         z-index: 3;
@@ -708,8 +701,6 @@ $el-accordion-size: 84px;
         max-width: 600px;
         margin: auto;
         p {
-            color: $base-0;
-            opacity: 0.6;
             margin-bottom: 25px;
         }
         h2 {
@@ -751,8 +742,9 @@ $el-accordion-size: 84px;
 }
 
 .el-cta-4 {
-    padding: 30px 0;
+    padding: 30px 0 15px;
     p {
+        color: $text-color;
         text-align: left;
     }
     .button {
@@ -840,11 +832,12 @@ $el-accordion-size: 84px;
     text-align: center;
     margin: 0 1px 6px;
     border-radius: $default-br;
-    border-bottom: 3px solid #e3e3e3;
+    // border-bottom: 3px solid #e3e3e3;
     background-color: $base-0;
     box-shadow: $default-bs !important;
     transition: all 0.45s;
     p {
+        font-size: 12px;
         font-family: $font-family-1;
     }
     .avatar {
@@ -871,13 +864,11 @@ $el-accordion-size: 84px;
         line-height: 40px;
         padding-top: 9px;
         text-align: left;
-        border-top: 1px solid $gray;
         .price {
             font-size: 12px;
             position: relative;
             .text-color {
                 float: right;
-                color: $primary;
                 font-size: 0.99em;
                 font-weight: 700;
                 position: relative;
@@ -961,7 +952,7 @@ $el-accordion-size: 84px;
     }
     &:hover {
         border-bottom-color: transparent;
-        box-shadow: 0 3px 1px 0 $primary !important;
+        box-shadow: 0 1px 3px 0 $primary !important;
     }
 }
 
@@ -1376,14 +1367,14 @@ $el-accordion-size: 84px;
     position: relative;
     margin-bottom: $space;
     p {
-        font-size: 16px;
         margin: 0;
+        font-size: 18px;
+        font-weight: 300;
     }
     h2 {
         color: $primary;
-        color: #32335a;
-        font-size: 27px;
-        font-weight: 600;
+        color: #151515;
+        font-size: 30px;
         letter-spacing: -1.2px;
         margin-bottom: 12px;
         .text-color {
@@ -1393,7 +1384,7 @@ $el-accordion-size: 84px;
     h3 {
         color: $text-color;
         font-size: 17px;
-        font-weight: 400;
+        font-weight: 300;
         font-family: $font-family-2;
         margin: 0;
     }
@@ -1401,15 +1392,16 @@ $el-accordion-size: 84px;
         margin-top: 25px;
     }
     &.light {
+        p {
+            color: $base-0;
+        }
         h2 {
             color: $base-0;
         }
         h3 {
             color: $base-0;
-            opacity: 0.6;
         }
         .divider-line {
-            opacity: 0.6;
             background-color: $base-0;
         }
     }
@@ -1818,7 +1810,7 @@ $el-accordion-size: 84px;
         text-align: center;
         display: inline-block;
         border-radius: 50%;
-        background-color: $secondary;
+        background-color: $primary;
         a {
             color: #333;
             color: $base-0;
@@ -2044,11 +2036,6 @@ $el-accordion-size: 84px;
             padding: 15px 30px;
             position: absolute;
             transition: all 0.45s;
-            p {
-                color: $base-0;
-                opacity: 0.75;
-                font-size: 14px;
-            }
             h1,
             h2 {
                 color: $base-0;
@@ -3005,6 +2992,25 @@ Custom Input Radio
 .new-price {
     padding-right: 6px;
     padding-left: 6px;
+}
+
+/*------------------------------------
+Element: Wave
+------------------------------------*/
+
+.el-bg-wave {
+    top: 0;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    opacity: 1;
+    position: absolute;
+    margin-top: -480px;
+    margin-left: -250px;
+    border-radius: 43%;
+    transform-origin: 50% 49%;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+    animation: drift 8000ms infinite linear;
 }
 
 /*------------------------------------

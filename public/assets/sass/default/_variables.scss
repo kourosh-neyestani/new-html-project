@@ -12,14 +12,16 @@
     --base-2: "";
     --base-3: "";
     --primary: #941cb9;
-    --primary: #239df0; 
+    --primary: #239df0;
     --primary: #f6931c;
-    --primary: darkslateblue; 
-    --primary-1: rgb(114, 61, 139);
+    --primary: darkslateblue;
+    --primary: #5b70f9;
+    --primary-1: #384cce;
     --primary-3: #0e0b2b;
     --secondary: #f64f1c;
-    --secondary-1: #0d9223;
-    --secondary-1: #dc3545;
+    --secondary: #ff66a6;
+    --secondary: #00c9b7;
+    --secondary-1: rgb(18, 172, 159);
     --text-color: #717f94;
     --color-1: #70b6fe;
     --color-2: #c670fe;
@@ -54,11 +56,11 @@ $color-5: var(--color-5);
 $color-6: var(--color-6);
 $success: green;
 $warning: orange;
-$danger: #F56C6C;
+$danger: #f56c6c;
 
 // Font Family
 $font-family-1: "Poppins", sans-serif;
-$font-family-2: "Nunito Sans", sans-serif;
+$font-family-2: "Poppins", sans-serif;
 
 // Grid
 $sm: 576px;
@@ -84,7 +86,6 @@ $container-md: 970px;
 $container-lg: 1200px;
 $container-xl: 1800px;
 
-
-$default-br: 12px;
+$default-br: 9px;
 $default-bs: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
 $default-bs-hover: 0 3px 1px 0 $primary;

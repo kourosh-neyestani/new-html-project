@@ -36,48 +36,50 @@
             position: absolute;
         }
     }
-    &.section-wave-1 {
-        &:after {
-            right: 0;
-            bottom: -1px;
-            width: 100%;
-            height: 20%;
-            content: "";
-            position: absolute;
-            background: no-repeat url("../images/shapes/wave-1.png") bottom center / cover;
+    &.section-wave {
+        &.section-wave-1 {
+            &:after {
+                right: 0;
+                bottom: -1px;
+                width: 100%;
+                height: 20%;
+                content: "";
+                position: absolute;
+                background: no-repeat url("../images/shapes/wave-1.png") bottom center / cover;
+            }
         }
-    }
-    &.section-wave-2 {
-        &:after {
-            right: 0;
-            bottom: -90px;
-            width: 100%;
-            height: 20%;
-            content: "";
-            position: absolute;
-            background: no-repeat url("../images/shapes/wave-2.png") bottom center / cover;
+        &.section-wave-2 {
+            &:after {
+                right: 0;
+                bottom: -90px;
+                width: 100%;
+                height: 20%;
+                content: "";
+                position: absolute;
+                background: no-repeat url("../images/shapes/wave-2.png") bottom center / cover;
+            }
         }
-    }
-    &.section-wave-3 {
-        &:after {
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            height: 300px;
-            content: "";
-            position: absolute;
-            background: no-repeat url("../images/shapes/wave-3.png") bottom center / cover;
+        &.section-wave-3 {
+            &:after {
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 300px;
+                content: "";
+                position: absolute;
+                background: no-repeat url("../images/shapes/wave-3.png") bottom center / cover;
+            }
         }
-    }
-    &.section-wave-6 {
-        &:after {
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            height: 30px;
-            content: "";
-            position: absolute;
-            background: repeat-x url("../images/shapes/wave-6.png") bottom center / contain;
+        &.section-wave-6 {
+            &:after {
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 30px;
+                content: "";
+                position: absolute;
+                background: repeat-x url("../images/shapes/wave-6.png") bottom center / contain;
+            }
         }
     }
 }
@@ -362,9 +364,10 @@
             .card-title {
                 width: 300px;
                 text-align: left;
+                h3,
                 h4 {
                     margin: 0;
-                    font-size: 18px;
+                    font-size: 16px;
                     padding-top: 3px;
                     .subtitle {
                         color: $text-color;
@@ -378,7 +381,6 @@
             .card-body {
                 p {
                     margin: 0;
-                    font-size: 0.96em;
                 }
             }
             &:not(:last-child) {
@@ -482,15 +484,17 @@
 
 .section-services {
     color: $text-color;
-    background-color: #0e0b2b;
+    h3,
     h4 {
-        height: 57px;
-        color: $base-0;
+        height: 30px;
+        color: $base-1;
+        font-size: 16px;
         margin-bottom: 30px;
     }
     .item {
         margin-bottom: 30px;
         .name {
+            font-size: 12px;
             &:not(.name-en) {
                 display: none;
             }
@@ -501,6 +505,13 @@
                 margin-right: 15px;
                 border-radius: 3px;
             }
+        }
+    }
+    &.section-services-2 {
+        color: $base-0;
+        h3,
+        h4 {
+            color: $base-0  ;
         }
     }
 }
@@ -515,10 +526,6 @@
         .inner {
             .details {
                 padding: 0 20px;
-                p {
-                    font-size: 12px;
-                    margin-bottom: 12px;
-                }
                 h3 {
                     line-height: 1;
                     font-size: 16px;
@@ -640,8 +647,6 @@
             border-radius: 15px;
             background-color: $base-0;
             p {
-                font-size: 14px;
-                font-weight: bold;
                 text-align: left;
                 margin: 0;
             }

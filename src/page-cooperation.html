@@ -1,16 +1,20 @@
 ${require('./components/header/_header.html') class="glass"}
 <div class="page page-cooperation">
     <!--Hero-->
-    <section class="section section-hero section-hero-1 section-hero-4 overlay-color overlay-image" style="background-image: url(assets/images/hero/hero-apply.jpg);">
+    <section class="section section-hero section-hero-4 overlay-color overlay-image" style="background-image: url(assets/images/hero/hero-apply.jpg);">
         <span class="bg-color bg-dark-side"></span>
         <div class="display-center">
             <div class="container">
                 <div class="hero-content">
-                    <h1 class="text-light">Apply to Teach Anytime.<br />Earn money. Anywhere.</h1>
-                    <p>Hold an online language class with your favorite teacher!<br />Find your favorite teacher, choose the class time and start learning the language.</p>
-                    <a href="page-register.html" class="button button-md button-secondary">
+                    <h1 class="text-light">Apply to teach Anytime.<br />Earn money. Anywhere.</h1>
+                    <p class="text-light">Hold an online language class with your favorite teacher!<br />Find your teacher, choose the time and start learning the language.</p>
+                    <a href="page-register.html" class="button button-md button-primary">
                         <span class="wave-hover"></span>
                         <span class="text text-light">Apply Now!</span>
+                    </a>
+                    <a href="page-register.html" class="button button-md button-secondary">
+                        <span class="wave-hover"></span>
+                        <span class="text text-light">Read More</span>
                     </a>
                 </div>
             </div>
@@ -25,8 +29,8 @@ ${require('./components/header/_header.html') class="glass"}
         <div class="display-spacing">
             <div class="container">
                 <header class="el-heading center">
-                    <h2>What Clients Say About Us?</h2>
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do.</h3>
+                    <h2>Learn a new language with an online tutor</h2>
+                    <p>We provide the best service that comes with the best results.</p>
                     <div class="divider divider-line"></div>
                 </header>
                 <div class="row mb--45">
@@ -119,8 +123,8 @@ ${require('./components/header/_header.html') class="glass"}
         <div class="display-spacing">
             <div class="container">
                 <header class="el-heading center">
-                    <h2>Frequently Asked Questions</h2>
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</h3>
+                    <h2>Frequently asked questions</h2>
+                    <p>We provide the best service that comes with the best results.</p>
                     <div class="divider divider-line"></div>
                 </header>
                 <div class="items mb--15">
@@ -132,7 +136,7 @@ ${require('./components/header/_header.html') class="glass"}
                                     <img src="assets/images/icons/click.svg" alt="Click me">
                                 </div>
                                 <div class="accordion-title">
-                                    <h4>How do I apply to teach on Eduline?</h4>
+                                    <h3>How do I apply to teach on Eduline?</h3>
                                 </div>
                                 <div class="accordion-arrow">
                                     <div class="display-center">
@@ -156,7 +160,7 @@ ${require('./components/header/_header.html') class="glass"}
                                     <img src="assets/images/icons/click.svg" alt="Click me">
                                 </div>
                                 <div class="accordion-title">
-                                    <h4>Do I need teaching experience?</h4>
+                                    <h3>Do I need teaching experience?</h3>
                                 </div>
                                 <div class="accordion-arrow">
                                     <div class="display-center">
@@ -180,7 +184,7 @@ ${require('./components/header/_header.html') class="glass"}
                                     <img src="assets/images/icons/click.svg" alt="Click me">
                                 </div>
                                 <div class="accordion-title">
-                                    <h4>Can I teach more than one language?</h4>
+                                    <h3>Can I teach more than one language?</h3>
                                 </div>
                                 <div class="accordion-arrow">
                                     <div class="display-center">
@@ -204,7 +208,7 @@ ${require('./components/header/_header.html') class="glass"}
                                     <img src="assets/images/icons/click.svg" alt="Click me">
                                 </div>
                                 <div class="accordion-title">
-                                    <h4>How much can I expect to earn from private lessons?</h4>
+                                    <h3>How much can I expect to earn from private lessons?</h3>
                                 </div>
                                 <div class="accordion-arrow">
                                     <div class="display-center">
@@ -228,7 +232,7 @@ ${require('./components/header/_header.html') class="glass"}
                                     <img src="assets/images/icons/click.svg" alt="Click me">
                                 </div>
                                 <div class="accordion-title">
-                                    <h4>As a teacher, how do I receive payment?</h4>
+                                    <h3>As a teacher, how do I receive payment?</h3>
                                 </div>
                                 <div class="accordion-arrow">
                                     <div class="display-center">
@@ -252,7 +256,7 @@ ${require('./components/header/_header.html') class="glass"}
                                     <img src="assets/images/icons/click.svg" alt="Click me">
                                 </div>
                                 <div class="accordion-title">
-                                    <h4>How much can I expect to earn from private lessons?</h4>
+                                    <h3>How much can I expect to earn from private lessons?</h3>
                                 </div>
                                 <div class="accordion-arrow">
                                     <div class="display-center">
@@ -273,6 +277,9 @@ ${require('./components/header/_header.html') class="glass"}
         </div>
     </section>
     <!--/-->
+    ${require('./sections/_testimonials.html')}
     ${require('./sections/_services.html')}
+    ${require('./sections/_cta-2.html')}
+    ${require('./sections/_blog.html')}
 </div>
 ${require('./components/footer/_footer.html')}

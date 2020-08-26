@@ -10,10 +10,10 @@ body {
     font-family: $font-family-1;
 }
 p {
-	color: $text-color;
-    font-weight: 500;
+    color: $text-color;
+    font-size: 14px;
+    line-height: 1.7;
     font-family: $font-family-2;
-    line-height: 1.8;
 	letter-spacing: -0.3px;
 }
 a {
