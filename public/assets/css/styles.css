@@ -8015,6 +8015,13 @@ Element: Responsive Video
     margin: 15px auto 45px;
     text-align: center !important;
   }
+  .section-blog .el-card .card-details h3, .section-blog .el-panel .card-details h3, .section-blog .section-features.section-features-1 .item .card-details h3, .section-features.section-features-1 .section-blog .item .card-details h3,
+  .section-blog .el-card .card-details h4,
+  .section-blog .el-panel .card-details h4,
+  .section-blog .section-features.section-features-1 .item .card-details h4,
+  .section-features.section-features-1 .section-blog .item .card-details h4 {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 768px) {
