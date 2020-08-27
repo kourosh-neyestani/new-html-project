@@ -34,6 +34,15 @@ heading
     font-weight: 300;
     margin-bottom: 0;
 }
+
+@media (max-width: 992px) {
+    .theme-preview .theme-preview-heading h2 {
+        font-size: 21px;
+    }
+    .theme-preview .theme-preview-heading h3 {
+        font-size: 14px;
+    }
+}
 /*------------------------------------
 Theme Preview - Header
 ------------------------------------*/
@@ -103,6 +112,11 @@ Theme Preview - Call Action
 .theme-preview .theme-preview-ca .bg-color {
     opacity: .75;
 }
+@media (max-width: 992px) {
+    .theme-preview .theme-preview-ca h4 {
+        font-size: 21px;
+    }
+}
 /*------------------------------------
 Theme Preview - Hero
 ------------------------------------*/
@@ -155,12 +169,12 @@ Theme Preview - Hero
 }
 @media (max-width: 992px) {
     .theme-preview .theme-preview-hero h1 {
-        font-size: 200px;
+        font-size: 33px;
     }
 }
 @media (max-width: 768px) {
     .theme-preview .theme-preview-hero h1 {
-        font-size: 150px;
+        font-size: 24px;
     }
 }
 /*------------------------------------
@@ -188,6 +202,12 @@ Theme Preview - Demos
     margin: auto;
     position: absolute;
 }
+
+@media (max-width: 992px) {
+    .theme-preview .theme-preview-demos .item h4 {
+        font-size: 14px;
+    }
+}
 /*------------------------------------
 Theme Preview - Features
 ------------------------------------*/
@@ -200,4 +220,9 @@ Theme Preview - Features
 .theme-preview .theme-preview-features .item p {
     opacity: .75;
     color: var(--base-1);
+}
+@media (max-width: 992px) {
+    .theme-preview-features h4 {
+        text-align: 14px;
+    }
 }
