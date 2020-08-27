@@ -5200,6 +5200,10 @@ Forms
   position: relative;
 }
 
+.el-panel .el-panel-body p {
+  font-size: 14px;
+}
+
 .el-panel .el-panel-body .el-panel-title {
   position: relative;
   margin-bottom: 6px;
@@ -5275,6 +5279,21 @@ Forms
 
 .el-panel .el-panel-body .el-panel-line .reserved li .button {
   display: inline-block;
+}
+
+.el-panel .el-panel-body .el-panel-image {
+  overflow: hidden;
+  position: relative;
+  padding-top: 57%;
+  margin-bottom: 25px;
+}
+
+.el-panel .el-panel-body .el-panel-image img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  position: absolute;
 }
 
 .el-panel.el-panel-calendar .item {
@@ -5447,6 +5466,15 @@ Forms
   .section-teacher .reserved {
     padding-right: 0 !important;
     padding-left: 0 !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .el-panel .el-panel-body {
+    padding: 20px;
+  }
+  .el-panel .el-panel-body p {
+    font-size: 12px;
   }
 }
 
