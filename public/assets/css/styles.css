@@ -8462,6 +8462,15 @@ testimonial
   .section .section-navbar p {
     text-align: center !important;
   }
+  .section .section-navbar .el-pagination {
+    float: inherit !important;
+    text-align: center !important;
+    margin: auto;
+  }
+  .section .section-navbar .el-sortination {
+    text-align: center !important;
+    margin-bottom: 20px;
+  }
 }
 
 /*------------------------------------
@@ -8472,7 +8481,6 @@ testimonial
 }
 
 .section-courses .cards .el-card, .section-courses .cards .el-panel, .section-courses .cards .section-features.section-features-1 .item, .section-features.section-features-1 .section-courses .cards .item {
-  max-width: 992px;
   margin: auto;
   padding: 30px;
   text-align: left;

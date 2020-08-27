@@ -333,6 +333,15 @@
             p {
                 text-align: center !important;
             }
+            .el-pagination {
+                float: inherit !important;
+                text-align: center !important;
+                margin: auto;
+            }
+            .el-sortination {
+                text-align: center !important;
+                margin-bottom: 20px;
+            }
         }
     }
 }
@@ -345,7 +354,6 @@
     .cards {
         margin-bottom: -3px;
         .el-card {
-            max-width: 992px;
             margin: auto;
             padding: 30px;
             text-align: left;
@@ -511,7 +519,7 @@
         color: $base-0;
         h3,
         h4 {
-            color: $base-0  ;
+            color: $base-0;
         }
     }
 }
