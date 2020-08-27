@@ -99,7 +99,7 @@
                             transition: all 0s;
                             .icon {
                                 top: 15px;
-                                left: 15px;
+                                right: 15px;
                                 font-size: 14px;
                                 font-weight: bold;
                                 position: absolute;
@@ -130,7 +130,7 @@
                     li {
                         color: $text-color !important;
                         display: block;
-                        height: 39px;
+                        height: 36px;
                         font-size: 12px;
                         line-height: 39px;
                         border-bottom: 1px solid $gray;
@@ -183,13 +183,21 @@
                                     width: 100%;
                                     font-size: 11px;
                                     padding-top: 15px;
-                                    padding-right: 51px;
+                                    padding-left: 51px;
                                     position: absolute;
                                     white-space: nowrap;
                                 }
                             }
                         }
                     }
+                }
+                .title {
+                    height: 36px;
+                    color: $primary;
+                    font-weight: 700;
+                    padding-top: 12px;
+                    padding-left: 15px;
+                    margin-bottom: 0;
                 }
             }
         }

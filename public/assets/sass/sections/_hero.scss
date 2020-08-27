@@ -176,27 +176,15 @@
 }
 @media (max-width: 992px) {
     .section-hero {
-        &.section-hero-1 {
-            height: 100vh;
-            .hero-image {
-                &.hero-image-1 {
-                    opacity: .1;
-                }
+        .hero-content {
+            padding-top: 60px;
+            h1 {
+                font-size: 20px;
+                margin-bottom: 15px;
             }
-        }
-        &.section-hero-2 {
-            .display-spacing {
-                .hero-content {
-                    padding-top: 60px;
-                    h1 {
-                        font-size: 20px;
-                        margin-bottom: 15px;
-                    }
-                    h2 {
-                        font-size: 18px;
-                        margin-bottom: 30px;
-                    }
-                }
+            h2 {
+                font-size: 18px;
+                margin-bottom: 30px;
             }
         }
         &.section-hero-4 {
@@ -209,11 +197,9 @@
             &.overlay-image {
                 background-position: top center !important;
             }
-            .hero-content {
-                h1 {
-                    font-size: 27px !important;
-                }
-            }
+        }
+        .el-floating-shapes {
+            opacity: .45;
         }
     }
 }
