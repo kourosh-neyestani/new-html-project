@@ -328,6 +328,10 @@ $header-height: 80px;
                 padding-top: 9px;
                 .primary-logo {
                     text-align: left;
+                    .text-2 {
+                        right: inherit;
+                        left: 0;
+                    }
                 }
                 img {
                     width: inherit;
@@ -503,6 +507,15 @@ $header-height: 80px;
         a {
             transition: none !important;
         }
+        .button-menu {
+            span {
+                &,
+                &:before,
+                &:after {
+                    background-color: $base-0 !important;
+                }
+            }
+        }
     }
 }
 
@@ -518,6 +531,15 @@ $header-height: 80px;
         .secondary-logo {
             top: 9px !important;
         }
+        .button-menu {
+            span {
+                &,
+                &:before,
+                &:after {
+                    background-color: $base-1;
+                }
+            }
+        }
     }
 }
 
@@ -526,6 +548,15 @@ $header-height: 80px;
     &.boxed {
         background: $base-0;
         box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+        .button-menu {
+            span {
+                &,
+                &:before,
+                &:after {
+                    background-color: $base-1;
+                }
+            }
+        }
         .header-wrap {
             .header-logo {
                 .main-logo {

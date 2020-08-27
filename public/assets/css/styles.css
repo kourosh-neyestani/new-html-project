@@ -2279,6 +2279,10 @@ h6,
   .app-header .header-wrap .header-logo .primary-logo {
     text-align: left;
   }
+  .app-header .header-wrap .header-logo .primary-logo .text-2 {
+    right: inherit;
+    left: 0;
+  }
   .app-header .header-wrap .header-logo img {
     width: inherit;
     height: 39px;
@@ -2472,6 +2476,10 @@ h6,
   transition: none !important;
 }
 
+.app-header.empty .button-menu span, .app-header.empty .button-menu span:before, .app-header.empty .button-menu span:after {
+  background-color: var(--base-0) !important;
+}
+
 .app-header.sticky {
   color: var(--base-1);
   background-color: var(--base-0);
@@ -2487,10 +2495,18 @@ h6,
   top: 9px !important;
 }
 
+.app-header.sticky .button-menu span, .app-header.sticky .button-menu span:before, .app-header.sticky .button-menu span:after {
+  background-color: var(--base-1);
+}
+
 .app-header.boxed {
   background: var(--base-0);
   -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
           box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+}
+
+.app-header.boxed .button-menu span, .app-header.boxed .button-menu span:before, .app-header.boxed .button-menu span:after {
+  background-color: var(--base-1);
 }
 
 .app-header.boxed .header-wrap .header-logo .main-logo {
