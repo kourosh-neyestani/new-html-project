@@ -9044,6 +9044,12 @@ testimonial
   padding-top: 30px;
 }
 
+@media (max-width: 992px) {
+  .section-stepper .el-stepper .content .stepper-body h3 {
+    font-size: 16px;
+  }
+}
+
 /*------------------------------------
     Pages
 ------------------------------------*/
