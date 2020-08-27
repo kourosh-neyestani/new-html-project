@@ -2979,7 +2979,7 @@ h6,
 }
 
 .app-sidenav .sidenav-menu {
-  right: -100%;
+  left: -100%;
   width: 300px;
   height: 100%;
   min-height: 100%;
@@ -3267,13 +3267,13 @@ h6,
 }
 
 .app-sidenav.active {
-  right: 0;
+  left: 0;
   opacity: 1;
   visibility: visible;
 }
 
 .app-sidenav.active .sidenav-menu {
-  right: 0;
+  left: 0;
 }
 
 @media (max-width: 768px) {
