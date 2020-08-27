@@ -190,6 +190,14 @@
                 margin-bottom: 30px;
             }
         }
+        &.section-hero-1 {
+            .hero-image {
+                opacity: .6;
+                img {
+                    width: 390px !important;
+                }
+            }
+        }
         &.section-hero-4 {
             &.overlay-color {
                 .bg-color {
@@ -208,6 +216,15 @@
 }
 @media (max-width: 768px) {
     .section-hero {
+        &.section-hero-1 {
+            .hero-image {
+                opacity: .15;
+                img {
+                    width: 390px !important;
+                    max-width: 90% !important; 
+                }
+            }
+        }
         &.section-hero-2 {
             .hero-image {
                 img {
