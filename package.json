@@ -13,7 +13,7 @@
   "dependencies": {
     "bootstrap": "^4.5.0",
     "html-includes": "^4.3.3",
-    "node-sass": "^4.14.1"
+    "node-sass": "^7.0.0"
   },
   "devDependencies": {
     "htmlhint": "^0.14.1"
